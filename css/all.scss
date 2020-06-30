@@ -1,4 +1,74 @@
+$black:#000;
+$white:#fff;
+$gray:#9a9a9a;
+$green:#47BCC5;
+
+@import 'reset';
+
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: $gray;
+    color: $black;
+}
+
+.wrap {
+
+    .navWrap {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        position: fixed;
+        bottom: 35px;
+        width: 100%;
+        max-height: 100px;
+        .navLogo {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            // border: 1px solid $white;
+            a:nth-child(1) {
+                background-color: $black;
+                text-align: center;
+                margin-top: 80px;
+                img {
+                    position: absolute;
+                    left: 30px;
+                    top: 0;
+                }
+            }
+            a:nth-child(2) {
+                background-color: $black;
+                text-align: center;
+                margin-top: 80px;
+                padding: 5px;
+                color: $white;
+                font-size: 45px;
+            }
+        }
+        .navOption {
+            background-color: $black;
+            margin-top: 40px;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            .navOptionA {
+                text-align: center;
+                font-size: 20px;
+                padding-top: 10px;
+                a {
+                    color: $white;
+                }
+            }
+            div {
+                
+            }
+        }
+        .navCopyright{
+            margin-top: 80px;
+            padding: 20px;
+            background-color: $black;
+            text-align: center;
+            color: $gray;
+        }
+
+    }
 }
