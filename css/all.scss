@@ -3,7 +3,7 @@ $white:#fff;
 $gray:#9a9a9a;
 $green:#47BCC5;
 
-@import 'reset';
+// @import 'reset';
 
 body {
     background-color: $gray;
@@ -16,30 +16,35 @@ body {
         display: grid;
         grid-template-columns: 30% 40% 30%;
         position: fixed;
-        bottom: 35px;
-        width: 100%;
-        max-height: 100px;
+        bottom: 0;
+        width: 100vw;
+        // max-height: 100vh;
+        z-index: 1;
         .navLogo {
             display: grid;
             grid-template-columns: 30% 70%;
-            // border: 1px solid $white;
+            
             a:nth-child(1) {
+                position: relative;
                 background-color: $black;
-                text-align: center;
                 margin-top: 80px;
                 img {
                     position: absolute;
-                    left: 30px;
-                    top: 0;
+                    bottom: 15%;
+                    left: 15%;
+                    width: 80%;
                 }
             }
             a:nth-child(2) {
+                position: relative;
                 background-color: $black;
-                text-align: center;
                 margin-top: 80px;
-                padding: 5px;
-                color: $white;
-                font-size: 45px;
+                img {
+                    position: absolute;
+                    left: 10%;
+                    bottom: 23%;
+                    width: 80%;
+                }
             }
         }
         .navOption {
@@ -52,14 +57,26 @@ body {
             border-top-right-radius: 15px;
             .navOptionA {
                 text-align: center;
-                font-size: 20px;
-                padding-top: 10px;
+                margin: auto;
+                // padding: 20px;
+                &:hover {
+                    a {
+                       color:$gray;
+                       border-bottom: 1px solid $green;
+                    }
+                }
                 a {
+                    text-decoration: none;
+                    padding: 20px;
                     color: $white;
+                    font-weight: lighter;
                 }
             }
-            div {
-                
+            .navOptionLine {
+                margin: 0 auto;
+                width: 1px;
+                height: 40px;
+                background-color: #fff;
             }
         }
         .navCopyright{
@@ -68,7 +85,121 @@ body {
             background-color: $black;
             text-align: center;
             color: $gray;
+            p {
+                font-size: 16px;
+                font-weight: lighter;
+            }
         }
 
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: $black;
+
+        .introLogo {
+            margin-top: 0;
+        }
+        .introButton {
+            margin: 80px 0 60px;
+            a {
+                text-decoration: none;
+                color: $white;
+                padding: 10px 20px;
+                border: 1px solid $white;
+                border-radius: 10px;
+                
+                &:hover {
+                    transition: 0.5s;
+                    border:1px solid $green;
+                    color: $green;
+                }
+            }
+        }
+        .introCopyright {
+            padding: 20px;
+            color: $gray;
+        }
+    }
+
+    .index {
+        
+        video {
+            width: 100%;
+        }
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        
+        .aboutLeftImg {
+            margin-right: 150px;
+            img {
+                height: 100vh;
+                width: auto;
+            }
+        }
+
+        .aboutRight {
+            display: flex;
+            justify-content: space-around;
+
+            .aboutLogo {
+                margin-right: 200px;
+                padding-top: 100px;
+            }
+            .aboutWords {
+                color: $white;
+                line-height: 2;
+                text-align: center;
+                font-size: 22px;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    .gallery {
+        height: 100vh;
+        .galleryArea {
+            margin: 0 auto;
+            padding-top: 100px; 
+            width: 1000px;
+            
+        }   
+    }
+
+    .process {
+        height: 100vh;
+        position: relative;
+
+        .cardArea {
+            padding-top: 120px;
+            .processCard1 {
+                margin: 20px auto;
+                background-color: $black;
+                border-radius: 15px;
+                width: 600px;
+                height: 300px;
+            }
+            .processCard2 {
+                margin: 20px auto;
+                background-color: $black;
+                border-radius: 15px;
+                width: 600px;
+                height: 300px;
+            }
+        }
+
+        .processRightLogo {
+            position: absolute;
+            padding: 20px;
+            right: 40px;
+            bottom: 80px;
+        }
     }
 }
