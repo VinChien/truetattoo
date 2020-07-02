@@ -9,12 +9,13 @@ $green:#47BCC5;
     padding: 0;
     margin: 0;
     line-height: 1;
+    scroll-behavior: smooth;
 }
 
 
 body {
     background-color: $gray;
-    color: $black;
+    
 }
 
 .wrap {
@@ -134,20 +135,66 @@ body {
     }
 
     .contact {
-        background-color: $green;
+        // background-color: $green;
         width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
+        position: relative;
         .contactArea {
             display: flex;
+            padding-top: 5%;
             .contactLeft {
                 
-
                 .contactLeft-1 {
-                    display: flex;
+                    margin-bottom: 10%;
+                    .contactXLogo {
+                        margin-bottom: 10%;
+                    }
+                    .contactXWords {
+                        color: $white;
+                        
+                        span {
+                            line-height: 2;
+                        }
+                    }
+                }
+                .contactLeft-2 {
+                    margin-bottom: 20%;
+                    color: $white;
+                    
+                    .addressImg {
+                        margin-bottom: 5%;
+                    }
+                    .addressWords {
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                }
+                .contactLeft-3 {
+                    margin: 0 auto;
+                    img {
+                        width: 30%;
+                    }
+
                 }
             }
+            .contactRight {
+                margin: 0 1%;
+                // padding: 0 1%;
+                img {
+                    width: 90%;
+                    border-radius: 15px;
+                }
+            }
+        }
+        .contactLastLogo {
+            position: absolute;
+            background-color: $black;
+            padding: 100% 1% 5%;
+            right: 0;
+            bottom: 0;
+                        
         }
     }
 
