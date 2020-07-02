@@ -119,6 +119,10 @@ body {
   width: 1000px;
 }
 
+.wrap .gallery .galleryArea img {
+  border-radius: 15px;
+}
+
 .wrap .process {
   width: 100vw;
   height: 100vh;
@@ -165,10 +169,12 @@ body {
 }
 
 .wrap .contact .contactArea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   padding-top: 5%;
+  padding-left: 2%;
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-1 {
@@ -188,12 +194,12 @@ body {
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-2 {
-  margin-bottom: 20%;
+  margin-bottom: 13%;
   color: #fff;
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-2 .addressImg {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-2 .addressWords {
@@ -201,16 +207,8 @@ body {
   line-height: 1.5;
 }
 
-.wrap .contact .contactArea .contactLeft .contactLeft-3 {
-  margin: 0 auto;
-}
-
 .wrap .contact .contactArea .contactLeft .contactLeft-3 img {
-  width: 30%;
-}
-
-.wrap .contact .contactArea .contactRight {
-  margin: 0 1%;
+  width: 20%;
 }
 
 .wrap .contact .contactArea .contactRight img {
