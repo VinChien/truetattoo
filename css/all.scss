@@ -5,105 +5,32 @@ $green:#47BCC5;
 
 // @import 'reset';
 
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+
 body {
     background-color: $gray;
     color: $black;
 }
 
 .wrap {
-
-    .navWrap {
-        display: grid;
-        grid-template-columns: 30% 40% 30%;
-        position: fixed;
-        bottom: 0;
-        width: 100vw;
-        // max-height: 100vh;
-        z-index: 1;
-        .navLogo {
-            display: grid;
-            grid-template-columns: 30% 70%;
-            
-            a:nth-child(1) {
-                position: relative;
-                background-color: $black;
-                margin-top: 80px;
-                img {
-                    position: absolute;
-                    bottom: 15%;
-                    left: 15%;
-                    width: 80%;
-                }
-            }
-            a:nth-child(2) {
-                position: relative;
-                background-color: $black;
-                margin-top: 80px;
-                img {
-                    position: absolute;
-                    left: 10%;
-                    bottom: 23%;
-                    width: 80%;
-                }
-            }
-        }
-        .navOption {
-            background-color: $black;
-            margin-top: 40px;
-            padding: 25px;
-            display: grid;
-            grid-template-columns: repeat(9,1fr);
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            .navOptionA {
-                text-align: center;
-                margin: auto;
-                // padding: 20px;
-                &:hover {
-                    a {
-                       color:$gray;
-                       border-bottom: 1px solid $green;
-                    }
-                }
-                a {
-                    text-decoration: none;
-                    padding: 20px;
-                    color: $white;
-                    font-weight: lighter;
-                }
-            }
-            .navOptionLine {
-                margin: 0 auto;
-                width: 1px;
-                height: 40px;
-                background-color: #fff;
-            }
-        }
-        .navCopyright{
-            margin-top: 80px;
-            padding: 20px;
-            background-color: $black;
-            text-align: center;
-            color: $gray;
-            p {
-                font-size: 16px;
-                font-weight: lighter;
-            }
-        }
-
-    }
-
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    height: 100vh;
+    overflow: hidden;
+    
     .intro {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
         background-color: $black;
-
-        .introLogo {
-            margin-top: 0;
-        }
+        width: 100vw;
+        height: 100vh;
         .introButton {
             margin: 80px 0 60px;
             a {
@@ -127,16 +54,16 @@ body {
     }
 
     .index {
-        
+        background-color: $black;
         video {
-            width: 100%;
+            width: 100vw;
+            height: 100vh;
         }
     }
 
     .about {
         display: flex;
-        align-items: center;
-        
+        width: 100vw;
         .aboutLeftImg {
             margin-right: 150px;
             img {
@@ -164,30 +91,32 @@ body {
     }
 
     .gallery {
+        width: 100vw;
         height: 100vh;
+        
         .galleryArea {
             margin: 0 auto;
-            padding-top: 100px; 
+            padding-top: 3%; 
             width: 1000px;
-            
         }   
     }
 
     .process {
+        width: 100vw;
         height: 100vh;
         position: relative;
 
         .cardArea {
-            padding-top: 120px;
+            padding-top: 3%;
             .processCard1 {
-                margin: 20px auto;
+                margin: 20px auto 0;
                 background-color: $black;
                 border-radius: 15px;
                 width: 600px;
                 height: 300px;
             }
             .processCard2 {
-                margin: 20px auto;
+                margin: 40px auto 0;
                 background-color: $black;
                 border-radius: 15px;
                 width: 600px;
@@ -202,4 +131,104 @@ body {
             bottom: 80px;
         }
     }
+
+    .contact {
+        background-color: $green;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        .contactArea {
+            display: flex;
+            .contactLeft {
+                
+
+                .contactLeft-1 {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .navWrap {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        .navLogo {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            
+            a:nth-child(1) {
+                position: relative;
+                background-color: $black;
+                margin-top: 120px;
+                img {
+                    position: absolute;
+                    bottom: 15%;
+                    left: 15%;
+                    width: 80%;
+                }
+            }
+            a:nth-child(2) {
+                position: relative;
+                background-color: $black;
+                margin-top: 120px;
+                img {
+                    position: absolute;
+                    left: 10%;
+                    bottom: 20%;
+                    width: 80%;
+                }
+            }
+        }
+        .navOption {
+            background-color: $black;
+            margin-top: 80px;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            .navOptionA {
+                text-align: center;
+                margin: 20px auto;
+                &:hover {
+                    a {
+                       transition: 0.3s;
+                       color:$white;
+                       border-bottom: 5px solid $green;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    padding: 15px 20px;
+                    color: $gray;
+                    font-weight: lighter;
+                    border-bottom: 0px solid $gray;
+                }
+            }
+            .navOptionLine {
+                margin: 20% auto;
+                width: 1%;
+                height: 60%;
+                background-color: $gray;
+            }
+        }
+        .navCopyright{
+            margin-top: 120px;
+            background-color: $black;
+            text-align: center;
+            padding-top: 15px;
+            color: $gray;
+            p {
+                font-size: 16px;
+                font-weight: lighter;
+            }
+        }
+
+    }
+
 }
