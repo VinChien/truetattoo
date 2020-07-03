@@ -175,7 +175,10 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   padding-top: 5%;
-  padding-left: 2%;
+}
+
+.wrap .contact .contactArea .contactLeft {
+  text-align: center;
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-1 {
@@ -216,8 +219,12 @@ body {
   width: 20%;
 }
 
+.wrap .contact .contactArea .contactRight {
+  text-align: center;
+}
+
 .wrap .contact .contactArea .contactRight img {
-  width: 90%;
+  width: 80%;
   border-radius: 15px;
 }
 
@@ -394,7 +401,6 @@ body {
   .wrap .contact .contactArea {
     width: 50%;
     padding-top: 5%;
-    padding-left: 5%;
   }
   .wrap .contact .contactArea .contactLeft .contactLeft-1 {
     margin-bottom: 10%;
@@ -418,6 +424,136 @@ body {
     padding: 100% 1% 5%;
     right: 0;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrap .navWrap .navOption .navOptionA {
+    margin: 15px 0;
+  }
+  .wrap .navWrap .navOption .navOptionA a {
+    padding: 15px 10px;
+  }
+  .wrap .navWrap .navOption .navOptionLine {
+    margin: 60% auto;
+  }
+  .wrap .navWrap .navCopyright {
+    padding-top: 11px;
+  }
+  .wrap .navWrap .navCopyright p {
+    font-size: 14px;
+  }
+  .wrap .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  .wrap .about .aboutLeftImg {
+    margin-right: 0;
+  }
+  .wrap .about .aboutLeftImg img {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+  }
+  .wrap .about .aboutRight {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .wrap .about .aboutRight .aboutLogo {
+    margin: 0 auto;
+    padding-top: 30%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    padding-top: 25%;
+    font-size: 20px;
+  }
+  .wrap .gallery .galleryArea {
+    padding-top: 8%;
+    margin-left: 15%;
+    width: 900px;
+  }
+  .wrap .process .cardArea {
+    padding-top: 6%;
+  }
+  .wrap .contact .contactArea {
+    width: 50%;
+    padding-top: 10%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 {
+    margin-bottom: 10%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo {
+    margin-bottom: 10%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo img {
+    width: 30%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-3 img {
+    width: 15%;
+  }
+  .wrap .contact .contactArea .contactRight {
+    text-align: left;
+    padding-top: 10%;
+  }
+  .wrap .contact .contactArea .contactRight img {
+    width: 260px;
+    border-radius: 15px;
+  }
+  .wrap .contact .contactLastLogo {
+    position: absolute;
+    background-color: #000;
+    padding: 100% 1% 5%;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .wrap .gallery .galleryArea {
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap .navWrap .navLogo a:nth-child(2) img {
+    bottom: 30%;
+  }
+  .wrap .navWrap .navOption {
+    margin-top: 100px;
+    padding: 10px;
+  }
+  .wrap .navWrap .navOption .navOptionA a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .wrap .navWrap .navOption .navOptionLine {
+    margin: 80% auto;
+  }
+  .wrap .navWrap .navCopyright {
+    padding-top: 20px;
+  }
+  .wrap .navWrap .navCopyright p {
+    font-size: 12px;
+  }
+  .wrap .about .aboutRight .aboutLogo {
+    margin-left: 20%;
+  }
+  .wrap .about .aboutRight .aboutLogo img {
+    width: 80%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    font-size: 17px;
+  }
+  .wrap .gallery .galleryArea {
+    margin: 0 auto;
+    width: 800px;
+  }
+  .wrap .contact .contactArea .contactRight {
+    padding-top: 5%;
   }
 }
 /*# sourceMappingURL=all.css.map */

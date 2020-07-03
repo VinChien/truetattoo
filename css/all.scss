@@ -150,9 +150,9 @@ body {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             padding-top: 5%;
-            padding-left: 2%;
+            // padding-left: 2%;
             .contactLeft {
-                
+                text-align: center;
                 .contactLeft-1 {
                     margin-bottom: 10%;
                     .contactXLogo {
@@ -187,10 +187,9 @@ body {
                 }
             }
             .contactRight {
-                
-
+                text-align: center;
                 img {
-                    width: 90%;
+                    width: 80%;
                     border-radius: 15px;
                 }
             }
@@ -400,9 +399,7 @@ body {
             .contactArea {
                 width: 50%;
                 padding-top: 5%;
-                padding-left: 5%;
                 .contactLeft {
-                    
                     .contactLeft-1 {
                         margin-bottom: 10%;
                         .contactXLogo {
@@ -438,18 +435,174 @@ body {
     }
 }
 
-
 // Tablet screen
 @media screen and (max-width: 1280px) {
     .wrap {
-        
+        .navWrap {
+            .navOption {
+                .navOptionA {
+                    margin: 15px 0;
+                    a {
+                        padding: 15px 10px;
+                    }
+                }
+                .navOptionLine {
+                    margin: 60% auto;
+                }
+            }
+            .navCopyright{
+                padding-top: 11px;
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        .about {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            .aboutLeftImg {
+                margin-right: 0;
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 15%;
+                    
+                }
+            }
+            .aboutRight {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                .aboutLogo {
+                    margin: 0 auto;
+                    padding-top: 30%;
+                }
+                .aboutWords {
+                    padding-top: 25%;
+                    font-size: 20px;
+                }
+            }
+        }
+        .gallery {
+            .galleryArea {
+                padding-top: 8%;
+                margin-left: 15%;
+                width: 900px;
+            } 
+        }
+        .process {
+            .cardArea {
+                padding-top: 6%;
+            }
+        }
+        .contact {
+            .contactArea {
+                width: 50%;
+                padding-top: 10%;
+                
+                .contactLeft {
+                    .contactLeft-1 {
+                        margin-bottom: 10%;
+                        .contactXLogo {
+                            margin-bottom: 10%;
+                            img {
+                                width: 30%;
+                            }
+                        }
+                    }
+                    .contactLeft-3 {
+                        img {
+                            width: 15%;
+                        }
+    
+                    }
+                }
+                .contactRight {
+                    text-align: left;
+                    padding-top: 10%;
+                    img {
+                        width: 260px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+            .contactLastLogo {
+                position: absolute;
+                background-color: $black;
+                padding: 100% 1% 5%;
+                right: 0;
+                bottom: 0;
+                            
+            }
+        }
     }
 }
 
+@media screen and (max-height: 768px) {
+    .wrap {
+        .gallery {
+            .galleryArea {
+                padding-top: 5%; 
+            }   
+        }
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .wrap {
-        
+        .navWrap {
+            .navLogo {
+                a:nth-child(2) {
+                    img {
+                        bottom: 30%;
+                    }
+                }
+            }
+            .navOption {
+                margin-top: 100px;
+                padding: 10px;
+                .navOptionA {
+                    a {
+                        font-size: 12px;
+                        padding: 10px;
+                    }
+                }
+                .navOptionLine {
+                    margin: 80% auto;
+                }
+            }
+            .navCopyright{
+                padding-top: 20px;
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        .about {
+            .aboutRight {
+                .aboutLogo {
+                    margin-left: 20%;
+                    img {
+                        width: 80%;
+                    }
+                }
+                .aboutWords {
+                    font-size: 17px;
+                }
+            }
+        }
+        .gallery {
+            .galleryArea {
+                margin: 0 auto;
+                width: 800px;
+            } 
+        }
+        .contact {
+            .contactArea {
+                .contactRight {
+                    padding-top: 5%;
+                }
+            }
+        }
     }
 }
 
