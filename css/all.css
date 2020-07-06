@@ -35,11 +35,15 @@ body {
   background-color: #000;
   width: 100vw;
   height: 100vh;
+  z-index: 3;
+}
+
+.wrap .intro .introLogo {
+  margin-bottom: 4%;
 }
 
 .wrap .intro .introButton {
-  margin: 80px 0 60px;
-  z-index: 2;
+  margin-bottom: 5%;
 }
 
 .wrap .intro .introButton a {
@@ -75,16 +79,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
   width: 100vw;
 }
 
 .wrap .about .aboutLeftImg {
-  margin-right: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5%;
 }
 
 .wrap .about .aboutLeftImg img {
-  height: 100vh;
-  width: auto;
+  height: auto;
+  width: 90%;
 }
 
 .wrap .about .aboutRight {
@@ -93,20 +110,42 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #9a9a9a;
 }
 
 .wrap .about .aboutRight .aboutLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 20%;
-  padding-top: 10%;
+}
+
+.wrap .about .aboutRight .aboutLogo img {
+  width: 90%;
 }
 
 .wrap .about .aboutRight .aboutWords {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   line-height: 1.5;
   text-align: left;
   font-size: 22px;
   font-weight: lighter;
-  padding-top: 5%;
+  margin-bottom: -5%;
 }
 
 .wrap .gallery {
@@ -332,20 +371,93 @@ body {
   font-weight: lighter;
 }
 
+.wrap .mNavWrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #000;
+  border-top: 2px dotted #9a9a9a;
+  padding-top: 1%;
+}
+
+.wrap .mNavWrap .mNavLeft {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70% 30%;
+      grid-template-rows: 70% 30%;
+}
+
+.wrap .mNavWrap .mNavLeft .mNavLogo {
+  padding: 5%;
+  padding-top: 0;
+}
+
+.wrap .mNavWrap .mNavLeft .mNavLogo img {
+  padding: 2%;
+  width: 100%;
+}
+
+.wrap .mNavWrap .mNavLeft .mNavCopyright p {
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 8px;
+}
+
+.wrap .mNavWrap .mNavRight {
+  margin: auto 0;
+}
+
+.wrap .mNavWrap .mNavRight .mNavMenuButton {
+  text-align: center;
+}
+
+.wrap .mNavWrap .mNavRight .mNavMenuButton a img {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 2%;
+  width: 60%;
+}
+
+.wrap .mNavMenu {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100vw;
+  bottom: 10%;
+  background-color: #9a9a9a;
+  opacity: 0.8;
+}
+
+.wrap .mNavMenu .mNavOptionA {
+  padding: 5%;
+  opacity: 1;
+}
+
+.wrap .mNavMenu .mNavOptionA a {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media screen and (max-width: 1600px) {
   .wrap .navWrap .navOption .navOptionLine {
     margin: 40% auto;
   }
-  .wrap .about .aboutLeftImg {
-    margin-right: 120px;
-  }
-  .wrap .about .aboutRight .aboutLogo {
-    padding-top: 20%;
-  }
   .wrap .about .aboutRight .aboutWords {
-    line-height: 1.8;
     font-size: 18px;
-    padding-top: 15%;
+    text-align: left;
   }
 }
 
@@ -360,7 +472,100 @@ body {
     margin: 100% auto;
   }
   .wrap .gallery .galleryArea {
+    padding-top: 6%;
     width: 900px;
+  }
+}
+
+@media screen and (max-height: 950px) {
+  .wrap .about .aboutRight .aboutLogo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: -10%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 0;
+    margin-top: -25%;
+    padding-right: 5%;
+    margin-left: -10%;
+  }
+}
+
+@media screen and (max-height: 864px) {
+  .wrap .intro .introLogo {
+    padding-top: 3%;
+    margin-bottom: 5%;
+  }
+  .wrap .intro .introButton {
+    margin-bottom: 6%;
+  }
+  .wrap .about .aboutRight {
+    margin-left: -8%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    font-size: 20px;
+    padding-right: 5%;
+    margin-left: -10%;
+  }
+}
+
+@media screen and (max-height: 820px) {
+  .wrap .intro .introButton {
+    margin-bottom: 4%;
+  }
+  .wrap .gallery .galleryArea {
+    width: 900px;
+  }
+}
+
+@media screen and (max-height: 770px) {
+  .wrap .intro .introLogo {
+    padding-top: 2%;
+  }
+  .wrap .intro .introButton {
+    margin-bottom: 2%;
+  }
+  .wrap .about .aboutLeftImg {
+    margin-right: 2%;
+  }
+  .wrap .about .aboutRight {
+    margin-left: 0;
+  }
+  .wrap .about .aboutRight .aboutLogo {
+    margin-top: -30%;
+  }
+  .wrap .about .aboutRight .aboutLogo img {
+    padding: 0 2%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    margin-left: -15%;
+    margin-top: -40%;
+    padding-right: 5%;
+  }
+  .wrap .gallery .galleryArea {
+    padding-top: 5%;
+    width: 800px;
+  }
+  .wrap .process .cardArea .processCard1 {
+    width: 500px;
+    height: 250px;
+  }
+  .wrap .process .cardArea .processCard2 {
+    width: 500px;
+    height: 250px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 {
+    margin-bottom: 5%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo {
+    margin-bottom: 5%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 {
+    margin-bottom: 8%;
   }
 }
 
@@ -375,10 +580,7 @@ body {
     margin: 80% auto;
   }
   .wrap .intro .introLogo {
-    padding-top: 5%;
-  }
-  .wrap .intro .introButton {
-    margin: 40px 0 60px;
+    margin-bottom: 3%;
   }
   .wrap .about .aboutRight .aboutWords {
     font-size: 16px;
@@ -443,78 +645,12 @@ body {
   .wrap .navWrap .navCopyright p {
     font-size: 14px;
   }
-  .wrap .about {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 40% 60%;
-        grid-template-columns: 40% 60%;
-  }
-  .wrap .about .aboutLeftImg {
-    margin-right: 0;
-  }
-  .wrap .about .aboutLeftImg img {
-    width: 100%;
-    height: auto;
-    margin-top: 15%;
-  }
-  .wrap .about .aboutRight {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-  }
-  .wrap .about .aboutRight .aboutLogo {
-    margin: 0 auto;
-    padding-top: 30%;
-  }
   .wrap .about .aboutRight .aboutWords {
-    padding-top: 25%;
-    font-size: 20px;
-  }
-  .wrap .gallery .galleryArea {
-    padding-top: 8%;
-    margin-left: 15%;
-    width: 900px;
-  }
-  .wrap .process .cardArea {
-    padding-top: 6%;
-  }
-  .wrap .contact .contactArea {
-    width: 50%;
-    padding-top: 10%;
-  }
-  .wrap .contact .contactArea .contactLeft .contactLeft-1 {
-    margin-bottom: 10%;
-  }
-  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo {
-    margin-bottom: 10%;
-  }
-  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo img {
-    width: 30%;
-  }
-  .wrap .contact .contactArea .contactLeft .contactLeft-3 img {
-    width: 15%;
+    margin-left: -15%;
   }
   .wrap .contact .contactArea .contactRight {
     text-align: left;
     padding-top: 10%;
-  }
-  .wrap .contact .contactArea .contactRight img {
-    width: 260px;
-    border-radius: 15px;
-  }
-  .wrap .contact .contactLastLogo {
-    position: absolute;
-    background-color: #000;
-    padding: 100% 1% 5%;
-    right: 0;
-    bottom: 0;
-  }
-}
-
-@media screen and (max-height: 768px) {
-  .wrap .gallery .galleryArea {
-    padding-top: 5%;
   }
 }
 
@@ -539,21 +675,109 @@ body {
   .wrap .navWrap .navCopyright p {
     font-size: 12px;
   }
+  .wrap .intro .introLogo {
+    margin-bottom: 5%;
+  }
+  .wrap .intro .introButton {
+    margin-bottom: 4%;
+  }
+  .wrap .about .aboutLeftImg {
+    margin: 0;
+  }
+  .wrap .about .aboutRight {
+    margin-left: -5%;
+    padding-right: 1%;
+  }
   .wrap .about .aboutRight .aboutLogo {
-    margin-left: 20%;
+    margin-top: -15%;
   }
   .wrap .about .aboutRight .aboutLogo img {
+    padding: 0;
     width: 80%;
   }
   .wrap .about .aboutRight .aboutWords {
-    font-size: 17px;
+    margin: -20% 0;
+    margin-left: -20%;
+    font-size: 14px;
   }
-  .wrap .gallery .galleryArea {
-    margin: 0 auto;
-    width: 800px;
+  .wrap .contact .contactArea {
+    padding-top: 15%;
   }
   .wrap .contact .contactArea .contactRight {
-    padding-top: 5%;
+    padding-top: 15%;
   }
+}
+
+@media screen and (max-width: 414px) {
+  .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    max-width: 414px;
+  }
+  .wrap .navWrap {
+    display: none;
+  }
+  .wrap .intro .introLogo {
+    margin: 10% 0 20% 18%;
+  }
+  .wrap .intro .introLogo img {
+    width: 80%;
+  }
+  .wrap .intro .introButton {
+    margin-bottom: 25%;
+  }
+  .wrap .intro .introButton a {
+    border: 2px solid #fff;
+  }
+  .wrap .index {
+    height: 100vh;
+    position: relative;
+  }
+  .wrap .index video {
+    position: absolute;
+    top: 15%;
+    right: -32%;
+    width: auto;
+    height: auto;
+  }
+  .wrap .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100vh;
+  }
+  .wrap .about .aboutLeftImg img {
+    width: 50%;
+  }
+  .wrap .about .aboutRight {
+    background-color: #000;
+    margin: 0;
+  }
+  .wrap .about .aboutRight .aboutLogo {
+    margin: 0;
+    margin-top: 10%;
+    padding: 10%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    margin: 0;
+    margin-top: -55%;
+    padding-left: 5%;
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+.elementHidden {
+  display: none !important;
 }
 /*# sourceMappingURL=all.css.map */
