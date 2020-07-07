@@ -1,7 +1,13 @@
-$(document).ready(function () {
+$(document).ready( () => {
+  
+  $('.mNavMenuButton').click((e) => { 
+    e.preventDefault();
+    $(".mNavMenu").toggleClass('mNavMenuOpen');
+    
+  });
   
   // scrollLeft
-  $('html, body, *').mousewheel(function (e, delta) {
+  $('html, body, *').mousewheel( (e, delta) => {
     this.scrollLeft -= (delta * 800);
     e.preventDefault();
   });

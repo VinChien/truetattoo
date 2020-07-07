@@ -1,3 +1,7 @@
+.mNavMenuOpen {
+  right: 1% !important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -428,31 +432,27 @@ body {
 
 .wrap .mNavMenu {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 100vw;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   bottom: 11%;
   right: -100%;
+}
+
+.wrap .mNavMenu .mNavOptionWrap .mNavOptionA {
   background-color: #47BCC5;
-  opacity: 0.8;
+  margin-bottom: 3px;
+  border-radius: 10px 0 0 10px;
 }
 
-.wrap .mNavMenu .mNavOptionA {
-  padding: 5%;
-  opacity: 1;
-}
-
-.wrap .mNavMenu .mNavOptionA a {
+.wrap .mNavMenu .mNavOptionWrap .mNavOptionA a {
   text-decoration: none;
   color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+.wrap .mNavMenu .mNavOptionWrap .mNavOptionA a p {
+  text-align: right;
 }
 
 .wrap .swiper-container {
