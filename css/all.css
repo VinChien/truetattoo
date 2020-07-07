@@ -439,9 +439,9 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 100vw;
-  bottom: 10%;
+  bottom: 11%;
   right: -100%;
-  background-color: #9a9a9a;
+  background-color: #47BCC5;
   opacity: 0.8;
 }
 
