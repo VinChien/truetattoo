@@ -3,6 +3,8 @@
   margin: 0;
   line-height: 1;
   scroll-behavior: smooth;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 body {
