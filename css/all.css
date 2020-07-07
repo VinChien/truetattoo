@@ -437,6 +437,7 @@ body {
           align-items: flex-end;
   width: 100vw;
   bottom: 10%;
+  right: -100%;
   background-color: #9a9a9a;
   opacity: 0.8;
 }
@@ -449,6 +450,18 @@ body {
 .wrap .mNavMenu .mNavOptionA a {
   text-decoration: none;
   color: #fff;
+}
+
+.wrap .swiper-container {
+  width: 350px;
+  height: 250px;
+  margin-top: 50%;
+  z-index: 0;
+}
+
+.wrap .swiper-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1600px) {
@@ -708,6 +721,18 @@ body {
   }
 }
 
+@media screen and (min-width: 415px) {
+  .wrap .mNavWrap {
+    display: none;
+  }
+  .wrap .mNavMenu {
+    display: none;
+  }
+  .wrap .swiper-container {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .wrap {
     display: -webkit-box;
@@ -736,8 +761,10 @@ body {
     border: 2px solid #fff;
   }
   .wrap .index {
+    border-top: 1px dashed #fff;
     height: 100vh;
     position: relative;
+    overflow: hidden;
   }
   .wrap .index video {
     position: absolute;
@@ -747,6 +774,7 @@ body {
     height: auto;
   }
   .wrap .about {
+    border-top: 1px dashed #fff;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -775,9 +803,114 @@ body {
     font-size: 14px;
     line-height: 2;
   }
-}
-
-.elementHidden {
-  display: none !important;
+  .wrap .gallery {
+    border-top: 1px dashed #fff;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+  }
+  .wrap .gallery .galleryArea {
+    display: none;
+  }
+  .wrap .process {
+    border-top: 1px dashed #fff;
+  }
+  .wrap .process .cardArea {
+    padding: 0;
+  }
+  .wrap .process .cardArea .processCard1 {
+    margin-top: 60px;
+    width: 250px;
+    height: 250px;
+  }
+  .wrap .process .cardArea .processCard2 {
+    width: 250px;
+    height: 250px;
+  }
+  .wrap .process .processRightLogo {
+    display: none;
+  }
+  .wrap .contact {
+    border-top: 1px dashed #fff;
+  }
+  .wrap .contact .contactArea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 30px 0 0 0;
+  }
+  .wrap .contact .contactArea .contactLeft {
+    text-align: left;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo {
+    margin: 0;
+    padding: 20px 10px 0 10px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo img {
+    width: 80%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXWords {
+    padding-top: 15px;
+    font-weight: lighter;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 160px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 .addressImg {
+    margin: 0 15px 0 35px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 .addressImg img {
+    padding-top: 10px;
+    width: 80%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 .addressWords {
+    font-size: 16px;
+    font-weight: lighter;
+    padding-top: 5px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-3 {
+    z-index: 0;
+    text-align: center;
+    margin-top: -180px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(2) {
+    margin: 0 15px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-3 a img {
+    width: 20%;
+  }
+  .wrap .contact .contactArea .contactRight {
+    text-align: center;
+    margin-top: 110px;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .wrap .contact .contactArea .contactRight img {
+    width: 100%;
+    margin-top: -45%;
+  }
+  .wrap .contact .contactLastLogo {
+    display: none;
+  }
 }
 /*# sourceMappingURL=all.css.map */

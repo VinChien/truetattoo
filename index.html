@@ -12,6 +12,8 @@
     <!-- slick CDN -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 
     <link rel="stylesheet" href="./css/all.css">
 </head>
@@ -39,7 +41,7 @@
 
         <!-- about -->
         <section class="about" id="about">
-            <div class="aboutLeftImg" >
+            <div class="aboutLeftImg">
                 <img src="./images/aboutLeftImg.png" alt="about image">
             </div>
             <div class="aboutRight">
@@ -53,6 +55,7 @@
                 </span>
             </div>
         </section>
+
         <!-- gallery -->
         <section class="gallery" id="gallery">
             <div class="galleryArea">
@@ -60,6 +63,18 @@
                 <img src="./images/gallery_2.jpg" alt="">
                 <img src="./images/gallery_3.jpg" alt="">
                 <img src="./images/gallery_4.jpg" alt="">
+            </div>
+            <!-- mGallery -->
+            <!-- swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./images/gallery_1.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/gallery_2.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/gallery_3.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./images/gallery_4.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -82,13 +97,13 @@
         <!-- contact -->
         <section class="contact" id="contact">
             <div class="contactArea">
-                <div class="contactLeft" >
+                <div class="contactLeft">
                     <div class="contactLeft-1">
                         <div class="contactXLogo">
                             <img src="./images/contactXLogo.png" alt="">
                         </div>
                         <div class="contactXWords">
-                            <span>諮詢時間<br>平日 20:00~22:00<br>假日 10:30~21:00<br><span class="fridayClose"></span></span>
+                            <span>諮詢時間<br>平日 20:00~22:00<br>假日 10:30~21:00<br>[ <span class="fridayClose"></span> ]</span>
                         </div>
                     </div>
                     <div class="contactLeft-2">
@@ -156,8 +171,9 @@
             </div>
             <!-- NavWrap -->
         </div>
+
         <!-- mobile-navgation -->
-        <div class="mNavWrap elementHidden">
+        <div class="mNavWrap">
             <div class="mNavLeft">
                 <div class="mNavLogo">
                     <a href="#intro">
@@ -176,8 +192,9 @@
                 </div>
             </div>
         </div>
+
         <!-- mNavMenu -->
-        <div class="mNavMenu elementHidden">
+        <div class="mNavMenu">
             <div class="mNavOptionA">
                 <a href="#index">INDEX</a>
             </div>
@@ -194,6 +211,7 @@
                 <a href="#contact">CONTACT</a>
             </div>
         </div>
+
         <!-- /wrap -->
     </div>
 
@@ -203,11 +221,15 @@
 
     <!-- jQuery CDN -->
     <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js'></script>
+    <script type='text/javascript'
+        src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js'></script>
     <!-- Slick CDN -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- typed CDN -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- Swiper CDN -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
     <script src="./js/all.js"></script>
 </body>
 
