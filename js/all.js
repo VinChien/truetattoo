@@ -1,15 +1,17 @@
-$(document).ready( () => {
-  
-  $('.mNavMenuButton').click((e) => { 
-    e.preventDefault();
-    $(".mNavMenu").toggleClass('mNavMenuOpen');
-    
-  });
-  
+$(document).ready(() => {
+
   // scrollLeft
-  $('html, body, *').mousewheel( (e, delta) => {
-    this.scrollLeft -= (delta * 800);
-    e.preventDefault();
+  // $('html, body, *').mousewheel(function (e, delta) {
+  //   e.preventDefault();
+  //   this.scrollLeft -= (delta * 500);
+  // });
+
+
+
+  // mNavMenuClick
+  $('.mNavMenuButton').click((e) => {
+    // e.preventDefault();
+    $(".mNavMenu").toggleClass('mNavMenuOpen');
   });
 
   // slick
@@ -36,7 +38,7 @@ $(document).ready( () => {
 
   var typed = new Typed('.fridayClose', options);
 
-  
+
   // swiper
   var swiper = new Swiper('.swiper-container', {
     effect: 'cube',
@@ -51,5 +53,5 @@ $(document).ready( () => {
       el: '.swiper-pagination',
     },
   });
-  
+
 });
