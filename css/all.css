@@ -755,13 +755,18 @@ body {
     margin: 10% 0 20% 18%;
   }
   .wrap .intro .introLogo img {
-    width: 80%;
+    width: 50%;
+    margin-left: 15%;
   }
   .wrap .intro .introButton {
     margin-bottom: 25%;
   }
   .wrap .intro .introButton a {
+    font-size: 12px;
     border: 2px solid #fff;
+  }
+  .wrap .intro .introCopyright p {
+    font-size: 12px;
   }
   .wrap .index {
     border-top: 1px dashed #fff;

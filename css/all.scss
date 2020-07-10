@@ -821,13 +821,20 @@ body {
             .introLogo {
                 margin: 10% 0 20% 18%;
                 img {
-                    width: 80%;
+                    width: 50%;
+                    margin-left: 15%;
                 }
             }
             .introButton {
                 margin-bottom: 25%;
                 a {
+                    font-size: 12px;
                     border: 2px solid $white;
+                }
+            }
+            .introCopyright {
+                p {
+                    font-size: 12px;
                 }
             }
         }
