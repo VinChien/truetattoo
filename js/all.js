@@ -10,7 +10,7 @@ $(document).ready(() => {
 
   // mNavMenuClick
   $('.mNavMenuButton').click((e) => {
-    // e.preventDefault();
+    e.preventDefault();
     $(".mNavMenu").toggleClass('mNavMenuOpen');
   });
 
