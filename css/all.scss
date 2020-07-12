@@ -3,7 +3,6 @@ $white:#fff;
 $gray:#9a9a9a;
 $green:#47BCC5;
 
-// @import 'reset';
 @import 'action';
 
 * {
@@ -83,7 +82,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $black;
+        background-color: $gray;
         width: 100vw;
         .aboutLeftImg {
             display: flex;
@@ -98,7 +97,7 @@ body {
         .aboutRight {
             display: flex;
             justify-content: space-around;
-            background-color: $gray;
+            // background-color: $gray;
 
             .aboutLogo {
                 display: flex;
@@ -352,8 +351,14 @@ body {
                         border-radius: 10px;
                         padding: 2%;
                         width: 60%;
+                        &:nth-child(1) {
+                            display: inline;
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                            background-color: $green;
+                        }
                     }
-
                 }
             }
         }
@@ -362,7 +367,7 @@ body {
     
     .mNavMenu {
         position: fixed;
-        transition: 0.8s;
+        transition: 0.5s;
         bottom: 11%;
         right: -100%;
         .mNavOptionWrap {

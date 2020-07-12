@@ -1,19 +1,23 @@
 $(document).ready(() => {
 
   // scrollLeft
-  // $('html, body, *').mousewheel(function (e, delta) {
-  //   e.preventDefault();
-  //   this.scrollLeft -= (delta * 500);
-  // });
-
-  // document.getElementById("TattooVideo").play(); 
+  $('*').mousewheel(function (e, move){
+    e.preventDefault();
+    this.scrollLeft -= (move * 800);
+  });
 
 
   // mNavMenuClick
   $('.mNavMenuButton').click((e) => {
     e.preventDefault();
+    // show mNavMenu
     $(".mNavMenu").toggleClass('mNavMenuOpen');
+    // change button images 
+    $(".mNavMenuCloseW").toggleClass('mNavButtonImgNone');
+    $(".mNavMenuOpenW").toggleClass('mNavButtonImgInline');
   });
+
+
 
   // slick
   $('.galleryArea').slick({

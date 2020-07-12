@@ -1,4 +1,12 @@
 .mNavMenuOpen {
   right: 1% !important;
 }
+
+.mNavButtonImgNone {
+  display: none !important;
+}
+
+.mNavButtonImgInline {
+  display: inline !important;
+}
 /*# sourceMappingURL=action.css.map */
