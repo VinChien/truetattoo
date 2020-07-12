@@ -807,6 +807,7 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 100vh;
+    background-color: #000;
   }
   .wrap .about .aboutLeftImg img {
     width: 50%;
