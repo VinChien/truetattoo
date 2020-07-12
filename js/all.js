@@ -6,7 +6,7 @@ $(document).ready(() => {
   //   this.scrollLeft -= (delta * 500);
   // });
 
-  document.getElementById("TattooVideo").play(); 
+  // document.getElementById("TattooVideo").play(); 
 
 
   // mNavMenuClick
