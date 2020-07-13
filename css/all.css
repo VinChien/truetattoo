@@ -54,6 +54,7 @@ body {
 }
 
 .wrap .intro .introLogo {
+  text-align: center;
   margin-bottom: 4%;
 }
 
@@ -72,8 +73,8 @@ body {
 .wrap .intro .introButton a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border: 1px solid #47BCC5;
-  color: #47BCC5;
+  border: 1px solid #47bcc5;
+  color: #47bcc5;
 }
 
 .wrap .intro .introCopyright {
@@ -83,11 +84,18 @@ body {
 
 .wrap .index {
   background-color: #000;
+  position: relative;
+  width: 100vw;
 }
 
-.wrap .index video {
-  width: 100vw;
-  height: 100vh;
+.wrap .index .tattooVideo {
+  border-radius: 20px 0 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
 .wrap .about {
@@ -100,7 +108,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #9a9a9a;
+  background-color: #000;
   width: 100vw;
 }
 
@@ -141,10 +149,11 @@ body {
 }
 
 .wrap .about .aboutRight .aboutLogo img {
-  width: 90%;
+  width: 100%;
 }
 
 .wrap .about .aboutRight .aboutWords {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +166,7 @@ body {
   color: #fff;
   line-height: 1.5;
   text-align: left;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: lighter;
   margin-bottom: -5%;
 }
@@ -205,9 +214,13 @@ body {
 
 .wrap .process .processRightLogo {
   position: absolute;
-  padding: 20px;
-  right: 40px;
-  bottom: 80px;
+  right: 0;
+  bottom: 50px;
+}
+
+.wrap .process .processRightLogo img {
+  height: auto;
+  width: 80%;
 }
 
 .wrap .contact {
@@ -354,7 +367,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #fff;
-  border-bottom: 5px solid #47BCC5;
+  border-bottom: 5px solid #47bcc5;
 }
 
 .wrap .navWrap .navOption .navOptionA a {
@@ -443,7 +456,7 @@ body {
 
 .wrap .mNavWrap .mNavRight .mNavMenuButton a img:nth-child(2) {
   display: none;
-  background-color: #47BCC5;
+  background-color: #47bcc5;
 }
 
 .wrap .mNavMenu {
@@ -455,7 +468,7 @@ body {
 }
 
 .wrap .mNavMenu .mNavOptionWrap .mNavOptionA {
-  background-color: #47BCC5;
+  background-color: #47bcc5;
   margin-bottom: 3px;
   border-radius: 10px 0 0 10px;
 }
@@ -484,12 +497,14 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
+  .wrap .intro .introLogo {
+    margin-bottom: 6%;
+  }
+  .wrap .intro .introLogo img {
+    width: 80%;
+  }
   .wrap .navWrap .navOption .navOptionLine {
     margin: 40% auto;
-  }
-  .wrap .about .aboutRight .aboutWords {
-    font-size: 18px;
-    text-align: left;
   }
 }
 
@@ -497,107 +512,21 @@ body {
   .wrap .navWrap .navOption .navOptionLine {
     margin: 60% auto;
   }
+  .wrap .about .aboutRight {
+    margin-top: -10%;
+  }
 }
 
 @media screen and (max-width: 1440px) {
+  .wrap .navWrap .navLogo a:nth-child(2) img {
+    bottom: 25%;
+  }
   .wrap .navWrap .navOption .navOptionLine {
     margin: 100% auto;
   }
   .wrap .gallery .galleryArea {
     padding-top: 6%;
     width: 900px;
-  }
-}
-
-@media screen and (max-height: 950px) {
-  .wrap .about .aboutRight .aboutLogo {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-top: -10%;
-  }
-  .wrap .about .aboutRight .aboutWords {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding-top: 0;
-    margin-top: -25%;
-    padding-right: 5%;
-    margin-left: -10%;
-  }
-}
-
-@media screen and (max-height: 864px) {
-  .wrap .intro .introLogo {
-    padding-top: 3%;
-    margin-bottom: 5%;
-  }
-  .wrap .intro .introButton {
-    margin-bottom: 6%;
-  }
-  .wrap .about .aboutRight {
-    margin-left: -8%;
-  }
-  .wrap .about .aboutRight .aboutWords {
-    font-size: 20px;
-    padding-right: 5%;
-    margin-left: -10%;
-  }
-}
-
-@media screen and (max-height: 820px) {
-  .wrap .intro .introButton {
-    margin-bottom: 4%;
-  }
-  .wrap .gallery .galleryArea {
-    width: 900px;
-  }
-}
-
-@media screen and (max-height: 770px) {
-  .wrap .intro .introLogo {
-    padding-top: 2%;
-  }
-  .wrap .intro .introButton {
-    margin-bottom: 2%;
-  }
-  .wrap .about .aboutLeftImg {
-    margin-right: 2%;
-  }
-  .wrap .about .aboutRight {
-    margin-left: 0;
-  }
-  .wrap .about .aboutRight .aboutLogo {
-    margin-top: -30%;
-  }
-  .wrap .about .aboutRight .aboutLogo img {
-    padding: 0 2%;
-  }
-  .wrap .about .aboutRight .aboutWords {
-    margin-left: -15%;
-    margin-top: -40%;
-    padding-right: 5%;
-  }
-  .wrap .gallery .galleryArea {
-    padding-top: 5%;
-    width: 800px;
-  }
-  .wrap .process .cardArea .processCard1 {
-    width: 500px;
-    height: 250px;
-  }
-  .wrap .process .cardArea .processCard2 {
-    width: 500px;
-    height: 250px;
-  }
-  .wrap .contact .contactArea .contactLeft .contactLeft-1 {
-    margin-bottom: 5%;
-  }
-  .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo {
-    margin-bottom: 5%;
-  }
-  .wrap .contact .contactArea .contactLeft .contactLeft-2 {
-    margin-bottom: 8%;
   }
 }
 
@@ -612,10 +541,14 @@ body {
     margin: 80% auto;
   }
   .wrap .intro .introLogo {
-    margin-bottom: 3%;
+    margin-bottom: 7%;
   }
-  .wrap .about .aboutRight .aboutWords {
-    font-size: 16px;
+  .wrap .intro .introLogo img {
+    width: 70%;
+  }
+  .wrap .about .aboutRight {
+    margin-left: -5%;
+    margin-top: -15%;
   }
   .wrap .gallery .galleryArea {
     width: 800px;
@@ -677,6 +610,9 @@ body {
   .wrap .navWrap .navCopyright p {
     font-size: 14px;
   }
+  .wrap .intro .introLogo img {
+    width: 60%;
+  }
   .wrap .about .aboutRight .aboutWords {
     margin-left: -15%;
   }
@@ -707,25 +643,24 @@ body {
   .wrap .navWrap .navCopyright p {
     font-size: 12px;
   }
-  .wrap .intro .introLogo {
-    margin-bottom: 5%;
-  }
-  .wrap .intro .introButton {
-    margin-bottom: 4%;
-  }
   .wrap .about .aboutLeftImg {
     margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .wrap .about .aboutLeftImg img {
+    margin-left: -15%;
   }
   .wrap .about .aboutRight {
-    margin-left: -5%;
     padding-right: 1%;
   }
   .wrap .about .aboutRight .aboutLogo {
     margin-top: -15%;
+    margin-left: -35%;
   }
   .wrap .about .aboutRight .aboutLogo img {
     padding: 0;
-    width: 80%;
+    width: 60%;
   }
   .wrap .about .aboutRight .aboutWords {
     margin: -20% 0;
@@ -768,13 +703,13 @@ body {
     display: none;
   }
   .wrap .intro .introLogo {
-    margin: 10% 0 20% 18%;
+    margin: 0 0 20% 1.3%;
   }
   .wrap .intro .introLogo img {
     width: 50%;
-    margin-left: 15%;
   }
   .wrap .intro .introButton {
+    text-align: center;
     margin-bottom: 25%;
   }
   .wrap .intro .introButton a {
@@ -809,24 +744,28 @@ body {
     height: 100vh;
     background-color: #000;
   }
+  .wrap .about .aboutLeftImg {
+    width: 100vw;
+    overflow: hidden;
+    height: 35%;
+  }
   .wrap .about .aboutLeftImg img {
-    width: 50%;
+    margin-top: 30%;
+    width: 100%;
   }
   .wrap .about .aboutRight {
     background-color: #000;
-    margin: 0;
   }
   .wrap .about .aboutRight .aboutLogo {
     margin: 0;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 10%;
   }
   .wrap .about .aboutRight .aboutWords {
     margin: 0;
-    margin-top: -55%;
-    padding-left: 5%;
-    font-size: 14px;
-    line-height: 2;
+    padding-top: 15%;
+    font-size: 12px;
+    line-height: 1.3;
   }
   .wrap .gallery {
     border-top: 1px dashed #fff;
