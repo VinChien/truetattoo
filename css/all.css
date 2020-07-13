@@ -89,7 +89,9 @@ body {
 }
 
 .wrap .index .tattooVideo {
-  border-radius: 20px 0 20px 0;
+  border: 1px dashed #9a9a9a;
+  border-radius: 20px;
+  opacity: 0.7;
   position: absolute;
   top: 0;
   left: 0;
@@ -337,6 +339,7 @@ body {
   position: relative;
   background-color: #000;
   margin-top: 120px;
+  border-top: 0.5px dashed #9a9a9a;
 }
 
 .wrap .navWrap .navLogo a:nth-child(2) img {
@@ -356,6 +359,7 @@ body {
       grid-template-columns: repeat(9, 1fr);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  border-top: 0.5px dashed #9a9a9a;
 }
 
 .wrap .navWrap .navOption .navOptionA {
@@ -391,6 +395,7 @@ body {
   text-align: center;
   padding-top: 15px;
   color: #9a9a9a;
+  border-top: 0.5px dashed #9a9a9a;
 }
 
 .wrap .navWrap .navCopyright p {

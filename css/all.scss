@@ -70,7 +70,10 @@ body {
         position: relative;
         width: 100vw;
         .tattooVideo {
-            border-radius: 20px 0 20px 0;
+            border: 1px dashed $gray;
+            border-radius: 20px;
+            // box-shadow: 0 0 1em $gray;
+            opacity: 0.7;
             // vertical center
             position: absolute;
 	        top: 0;
@@ -245,7 +248,6 @@ body {
         .navLogo {
             display: grid;
             grid-template-columns: 30% 70%;
-
             a:nth-child(1) {
                 position: relative;
                 background-color: $black;
@@ -261,6 +263,7 @@ body {
                 position: relative;
                 background-color: $black;
                 margin-top: 120px;
+                border-top: 0.5px dashed $gray;
                 img {
                     position: absolute;
                     left: 10%;
@@ -277,6 +280,7 @@ body {
             grid-template-columns: repeat(9, 1fr);
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
+            border-top: 0.5px dashed $gray;
             .navOptionA {
                 text-align: center;
                 margin: 20px auto;
@@ -308,6 +312,7 @@ body {
             text-align: center;
             padding-top: 15px;
             color: $gray;
+            border-top: 0.5px dashed $gray;
             p {
                 font-size: 16px;
                 font-weight: lighter;
