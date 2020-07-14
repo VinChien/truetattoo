@@ -6,14 +6,17 @@ $(document).ready(() => {
     this.scrollLeft -= (move * 800);
   });
 
+  // tooltips
+  $('[data-toggle="tooltip"]').tooltip()
+
   // mNavMenuClick
   $('.mNavMenuButton').click((e) => {
     e.preventDefault();
     // show mNavMenu
     $(".mNavMenu").toggleClass('mNavMenuOpen');
     // change button images 
-    $(".mNavMenuCloseW").toggleClass('mNavButtonImgNone');
-    $(".mNavMenuOpenW").toggleClass('mNavButtonImgInline');
+    $(".mNavMenuCloseW").toggleClass('displayNone');
+    $(".mNavMenuOpenW").toggleClass('displayInline');
   });
 
   // auto add galleryArea pic

@@ -297,6 +297,12 @@ body {
                     color: $gray;
                     font-weight: lighter;
                     border-bottom: 0px solid $gray;
+                    // &:nth-child(1) {
+                    //     display: none;
+                    // }
+                    // &:nth-child(2) {
+                    //     display: inline;
+                    // }
                 }
             }
             .navOptionLine {
