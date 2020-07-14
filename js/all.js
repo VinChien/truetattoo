@@ -6,7 +6,6 @@ $(document).ready(() => {
     this.scrollLeft -= (move * 800);
   });
 
-
   // mNavMenuClick
   $('.mNavMenuButton').click((e) => {
     e.preventDefault();
@@ -71,12 +70,11 @@ $(document).ready(() => {
   var swiper = new Swiper('.swiper-container', {
     effect: 'cube',
     loop: true,
-    // grabCursor: true,
+    autoplay: {
+      delay: 5000,
+    },
     cubeEffect: {
       shadow: false,
-      // slideShadows: true,
-      // shadowOffset: 20,
-      // shadowScale: 0.94,
     },
     pagination: {
       el: '.swiper-pagination',
