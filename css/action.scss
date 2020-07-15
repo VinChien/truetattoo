@@ -10,31 +10,33 @@
     display: inline !important;
 }
 
-@mixin tooltip-custom($bg-color, $color) {
-
+@mixin tooltip-custom($bg-color, $color, $margin-bottom, $padding, $font-size) {
+    margin-bottom: $margin-bottom;
     .tooltip-inner {
-      background-color: $bg-color;
-      color: $color;
+        background-color: $bg-color;
+        color: $color;
+        font-size: $font-size;
+        padding: $padding;
+        border-radius: 50%;
     }
-  
+
     &.bs-tooltip-top .arrow:before {
-      border-top-color: $bg-color;
+        border-top-color: $bg-color;
     }
-  
+
     &.bs-tooltip-right .arrow:before {
-      border-right-color: $bg-color;
+        border-right-color: $bg-color;
     }
-  
+
     &.bs-tooltip-left .arrow:before {
-      border-left-color: $bg-color;
+        border-left-color: $bg-color;
     }
-  
+
     &.bs-tooltip-bottom .arrow:before {
-      border-bottom-color: $bg-color;
+        border-bottom-color: $bg-color;
     }
-  
-  }
+}
 
 .tooltip-custom {
-    @include tooltip-custom(#47bcc5, #ffffff);
-  }
+    @include tooltip-custom(#47bcc5, #ffffff, 10px, 10px, 12px);
+}

@@ -10,9 +10,16 @@
   display: inline !important;
 }
 
+.tooltip-custom {
+  margin-bottom: 10px;
+}
+
 .tooltip-custom .tooltip-inner {
   background-color: #47bcc5;
   color: #ffffff;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .tooltip-custom.bs-tooltip-top .arrow:before {
