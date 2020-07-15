@@ -487,6 +487,7 @@ body {
 
 .wrap .mNavMenu .mNavOptionWrap .mNavOptionA a p {
   text-align: right;
+  margin: 0;
 }
 
 .wrap .swiper-container {
