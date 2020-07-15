@@ -7,7 +7,7 @@ $(document).ready(() => {
   });
 
   // tooltips
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
 
   // mNavMenuClick
   $('.mNavMenuButton').click((e) => {

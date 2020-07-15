@@ -9,4 +9,25 @@
 .displayInline {
   display: inline !important;
 }
+
+.tooltip-custom .tooltip-inner {
+  background-color: #47bcc5;
+  color: #ffffff;
+}
+
+.tooltip-custom.bs-tooltip-top .arrow:before {
+  border-top-color: #47bcc5;
+}
+
+.tooltip-custom.bs-tooltip-right .arrow:before {
+  border-right-color: #47bcc5;
+}
+
+.tooltip-custom.bs-tooltip-left .arrow:before {
+  border-left-color: #47bcc5;
+}
+
+.tooltip-custom.bs-tooltip-bottom .arrow:before {
+  border-bottom-color: #47bcc5;
+}
 /*# sourceMappingURL=action.css.map */
