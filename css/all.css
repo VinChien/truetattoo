@@ -45,7 +45,6 @@
   scroll-behavior: smooth;
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 body {
@@ -222,26 +221,6 @@ body {
   position: relative;
 }
 
-.wrap .process .cardArea {
-  padding-top: 3%;
-}
-
-.wrap .process .cardArea .processCard1 {
-  margin: 20px auto 0;
-  background-color: #000;
-  border-radius: 15px;
-  width: 600px;
-  height: 300px;
-}
-
-.wrap .process .cardArea .processCard2 {
-  margin: 40px auto 0;
-  background-color: #000;
-  border-radius: 15px;
-  width: 600px;
-  height: 300px;
-}
-
 .wrap .process .processRightLogo {
   position: absolute;
   right: 0;
@@ -251,6 +230,68 @@ body {
 .wrap .process .processRightLogo img {
   height: auto;
   width: 80%;
+  opacity: 0.3;
+}
+
+.wrap .process .cardArea .processCard1 {
+  margin: 2% auto 0;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 15px;
+  width: 900px;
+}
+
+.wrap .process .cardArea .processCard1 .processTitle {
+  border-bottom: 1px dashed #9a9a9a;
+  text-align: center;
+}
+
+.wrap .process .cardArea .processCard1 .processTitle h3 {
+  color: #fff;
+}
+
+.wrap .process .cardArea .processCard1 .processContent ul {
+  margin: 0;
+  padding: 3%;
+  padding-top: 4%;
+  list-style-type: upper-roman;
+  color: #47bcc5;
+}
+
+.wrap .process .cardArea .processCard1 .processContent ul li p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.wrap .process .cardArea .processCard2 {
+  margin: 40px auto 0;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 15px;
+  width: 900px;
+}
+
+.wrap .process .cardArea .processCard2 .processTitle {
+  border-bottom: 1px dashed #9a9a9a;
+  text-align: center;
+}
+
+.wrap .process .cardArea .processCard2 .processTitle h3 {
+  color: #fff;
+}
+
+.wrap .process .cardArea .processCard2 .processContent ul {
+  margin: 0;
+  padding: 3%;
+  padding-top: 4%;
+  list-style-type: upper-roman;
+  color: #47bcc5;
+}
+
+.wrap .process .cardArea .processCard2 .processContent ul li p {
+  color: #fff;
+  font-size: 16px;
 }
 
 .wrap .contact {
@@ -540,6 +581,22 @@ body {
   .wrap .index .tattooVideo {
     margin-top: 15%;
   }
+  .wrap .process .cardArea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 8%;
+  }
+  .wrap .process .cardArea .processCard1, .wrap .process .cardArea .processCard2 {
+    width: 500px;
+    margin: 0 2%;
+  }
+  .wrap .process .cardArea .processCard2 .processContent ul li p {
+    line-height: 1.5;
+  }
   .wrap .navWrap .navOption .navOptionLine {
     margin: 40% auto;
   }
@@ -599,14 +656,6 @@ body {
   .wrap .gallery .galleryArea {
     width: 800px;
   }
-  .wrap .process .cardArea .processCard1 {
-    width: 500px;
-    height: 250px;
-  }
-  .wrap .process .cardArea .processCard2 {
-    width: 500px;
-    height: 250px;
-  }
   .wrap .process .processRightLogo {
     right: 20px;
     bottom: 60px;
@@ -661,6 +710,15 @@ body {
   }
   .wrap .about .aboutRight .aboutWords {
     margin-left: -15%;
+  }
+  .wrap .process .processRightLogo {
+    right: 0;
+    bottom: 50px;
+  }
+  .wrap .process .processRightLogo img {
+    margin-left: 25%;
+    text-align: right;
+    width: 60%;
   }
   .wrap .contact .contactArea .contactRight {
     text-align: left;
@@ -826,12 +884,28 @@ body {
   .wrap .process {
     border-top: 1px dashed #fff;
   }
-  .wrap .process .cardArea .processCard1 {
-    margin-top: 60px;
-    width: 250px;
+  .wrap .process .cardArea {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .wrap .process .cardArea .processCard1, .wrap .process .cardArea .processCard2 {
+    width: 300px;
+    height: 250px;
+    margin: 10% auto;
+    overflow: scroll;
+  }
+  .wrap .process .cardArea .processCard1 .processContent, .wrap .process .cardArea .processCard2 .processContent {
+    padding: 0 6% 8% 10%;
+  }
+  .wrap .process .cardArea .processCard1 .processContent ul li p, .wrap .process .cardArea .processCard2 .processContent ul li p {
+    font-size: 12px;
+    line-height: 1.5;
   }
   .wrap .process .cardArea .processCard2 {
-    width: 250px;
+    margin-top: 5%;
   }
   .wrap .process .processRightLogo {
     display: none;
@@ -949,11 +1023,8 @@ body {
   .wrap .about .aboutLeftImg {
     height: 45%;
   }
-  .wrap .process .cardArea {
-    padding-top: 0;
-  }
   .wrap .process .cardArea .processCard1 {
-    margin-top: 30px;
+    margin: 30px auto 0;
   }
   .wrap .contact .contactArea {
     margin: 20px 0 0 0;
@@ -998,14 +1069,8 @@ body {
     width: 320px;
     margin-top: 45%;
   }
-  .wrap .process .cardArea .processCard1 {
-    margin-top: 80px;
-    width: 200px;
-    height: 200px;
-  }
-  .wrap .process .cardArea .processCard2 {
-    width: 200px;
-    height: 200px;
+  .wrap .process .cardArea .processCard1, .wrap .process .cardArea .processCard2 {
+    height: 230px;
   }
   .wrap .contact .contactArea {
     margin: 20px 0 0 0;
@@ -1052,8 +1117,9 @@ body {
   .wrap .gallery .swiper-container {
     width: 300px;
   }
-  .wrap .process .cardArea .processCard1 {
-    margin-top: 30px;
+  .wrap .process .cardArea .processCard1, .wrap .process .cardArea .processCard2 {
+    width: 270px;
+    height: 200px;
   }
   .wrap .contact .contactArea {
     margin-top: 0;

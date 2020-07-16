@@ -14,8 +14,8 @@ $green: #47bcc5;
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    // iphneX
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    // // iphneX
+    // padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 body {
@@ -146,25 +146,6 @@ body {
         width: 100vw;
         height: 100vh;
         position: relative;
-
-        .cardArea {
-            padding-top: 3%;
-            .processCard1 {
-                margin: 20px auto 0;
-                background-color: $black;
-                border-radius: 15px;
-                width: 600px;
-                height: 300px;
-            }
-            .processCard2 {
-                margin: 40px auto 0;
-                background-color: $black;
-                border-radius: 15px;
-                width: 600px;
-                height: 300px;
-            }
-        }
-
         .processRightLogo {
             position: absolute;
             right: 0;
@@ -172,8 +153,73 @@ body {
             img {
                 height: auto;
                 width: 80%;
+                opacity: 0.3;
             }
         }
+
+        .cardArea {
+            .processCard1 {
+                margin: 2% auto 0;
+                padding: 20px;
+                background-color: $black;
+                border-radius: 15px;
+                width: 900px;
+                .processTitle {
+                    border-bottom: 1px dashed $gray;
+                    text-align: center;
+                    h3 {
+                        color: $white;
+                    }
+                }
+                .processContent {
+                    ul {
+                        margin: 0;
+                        padding: 3%;
+                        padding-top: 4%;
+                        list-style-type: upper-roman;
+                        color: $green;
+                        li {
+                            p {
+                                color: $white;
+                                font-size: 16px;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+            .processCard2 {
+                margin: 40px auto 0;
+                padding: 20px;
+                background-color: $black;
+                border-radius: 15px;
+                width: 900px;
+                .processTitle {
+                    border-bottom: 1px dashed $gray;
+                    text-align: center;
+                    h3 {
+                        color: $white;
+                    }
+                }
+                .processContent {
+                    ul {
+                        margin: 0;
+                        padding: 3%;
+                        padding-top: 4%;
+                        list-style-type: upper-roman;
+                        color: $green;
+                        li {
+                            p {
+                                color: $white;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
     }
 
     .contact {
@@ -431,6 +477,37 @@ body {
                 margin-top: 15%;
             }
         }
+        .process {
+            .cardArea {
+                display: flex;
+                justify-content: center;
+                padding-top: 8%;
+                .processCard1, .processCard2 {
+                    width: 500px;
+                    margin: 0 2%;
+                    .processContent {
+                        ul {
+                            li {
+                                p {
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .processCard2 {
+                    .processContent {
+                        ul {
+                            li {
+                                p {
+                                    line-height: 1.5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .navWrap {
             .navOption {
                 .navOptionLine {
@@ -534,16 +611,6 @@ body {
             }
         }
         .process {
-            .cardArea {
-                .processCard1 {
-                    width: 500px;
-                    height: 250px;
-                }
-                .processCard2 {
-                    width: 500px;
-                    height: 250px;
-                }
-            }
             .processRightLogo {
                 right: 20px;
                 bottom: 60px;
@@ -620,6 +687,17 @@ body {
             .aboutRight {
                 .aboutWords {
                     margin-left: -15%;
+                }
+            }
+        }
+        .process {
+            .processRightLogo {
+                right: 0;
+                bottom: 50px;
+                img {
+                    margin-left: 25%;
+                    text-align: right;
+                    width: 60%;
                 }
             }
         }
@@ -804,12 +882,27 @@ body {
         .process {
             border-top: 1px dashed $white;
             .cardArea {
-                .processCard1 {
-                    margin-top: 60px;
-                    width: 250px;
+                flex-direction: column;
+                padding-top: 0;
+                .processCard1, .processCard2 {
+                    width: 300px;
+                    height: 250px;
+                    margin: 10% auto;
+                    overflow: scroll;
+                    .processContent {
+                        padding: 0 6% 8% 10%;
+                        ul {
+                            li {
+                                p {
+                                    font-size: 12px;
+                                    line-height: 1.5;
+                                }
+                            }
+                        }
+                    }
                 }
                 .processCard2 {
-                    width: 250px;
+                    margin-top: 5%;
                 }
             }
             .processRightLogo {
@@ -928,9 +1021,9 @@ body {
         }
         .process {
             .cardArea {
-                padding-top: 0;
                 .processCard1 {
-                    margin-top: 30px;
+                    margin: 30px auto 0;
+                    
                 }
             }
         }
@@ -993,14 +1086,8 @@ body {
         }
         .process {
             .cardArea {
-                .processCard1 {
-                    margin-top: 80px;
-                    width: 200px;
-                    height: 200px;
-                }
-                .processCard2 {
-                    width: 200px;
-                    height: 200px;
+                .processCard1, .processCard2 {
+                    height: 230px; 
                 }
             }
         }
@@ -1073,8 +1160,9 @@ body {
         }
         .process {
             .cardArea {
-                .processCard1 {
-                    margin-top: 30px;
+                .processCard1, .processCard2 {
+                    width: 270px;
+                    height: 200px;
                 }
             }
         }
