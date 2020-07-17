@@ -25,9 +25,9 @@ $(document).ready(() => {
   let strBox = "";
   for (let i = 1; i < (photos + 1); i++) {
     if (i < 10) {
-      strBox += '<img src="./images/gallery_0' + String(i) + '.jpg" alt="">';
+      strBox += `<img src="./images/gallery_0${String(i)}.jpg" alt="">`;
     } else {
-      strBox += '<img src="./images/gallery_' + String(i) + '.jpg" alt="">';
+      strBox += `<img src="./images/gallery_${String(i)}.jpg" alt="">`;
     }
   }
   addGalleryPhoto.innerHTML = strBox;
@@ -38,9 +38,9 @@ $(document).ready(() => {
   let mStrBox = "";
   for (let i = 1; i < (mPhotos + 1); i++) {
     if (i < 10) {
-      mStrBox += '<div class="swiper-slide" style="background-image:url(./images/gallery_0' + String(i) + '.jpg)"></div>';
+      mStrBox += `<div class="swiper-slide" style="background-image:url(./images/gallery_0${String(i)}.jpg)"></div>`;
     } else {
-      mStrBox += '<div class="swiper-slide" style="background-image:url(./images/gallery_' + String(i) + '.jpg)"></div>';
+      mStrBox += `<div class="swiper-slide" style="background-image:url(./images/gallery_${String(i)}.jpg)"></div>`;
     }
   }
   mAddGalleryPhoto.innerHTML = mStrBox;
