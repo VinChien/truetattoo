@@ -1,9 +1,9 @@
 $(document).ready(() => {
 
   // scrollLeft
-  // $('*').mousewheel(function (e, move) {
-  //   this.scrollLeft -= (move * 500);
-  // });
+  $('*').mousewheel(function (e, move) {
+    this.scrollLeft -= (move * 500);
+  });
 
   // intro button effect
   document.querySelector('.button').onmousemove = (e) => {
