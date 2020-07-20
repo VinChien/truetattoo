@@ -682,7 +682,7 @@ body {
   .wrap .contact .contactArea .contactLeft .contactLeft-3 img {
     width: 15%;
   }
-  .wrap .contact .contactArea .contactRight img {
+  .wrap .contact .contactArea .contactRight .googleMap img {
     width: 80%;
     border-radius: 15px;
   }
@@ -932,7 +932,7 @@ body {
             align-items: center;
     width: 100vw;
     padding: 0;
-    margin: 30px 0 0 0;
+    margin: 0;
   }
   .wrap .contact .contactArea .contactLeft {
     text-align: left;
@@ -990,7 +990,7 @@ body {
     overflow: hidden;
     border-radius: 15px;
   }
-  .wrap .contact .contactArea .contactRight img {
+  .wrap .contact .contactArea .contactRight .googleMap img {
     width: 100%;
     margin-top: -45%;
   }
