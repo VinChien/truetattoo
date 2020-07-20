@@ -194,6 +194,7 @@ body {
           align-items: center;
   color: #fff;
   line-height: 1.5;
+  letter-spacing: 3px;
   text-align: left;
   font-size: 16px;
   font-weight: lighter;
@@ -316,6 +317,7 @@ body {
 
 .wrap .contact .contactArea .contactLeft {
   text-align: center;
+  letter-spacing: 3px;
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-1 {
@@ -360,7 +362,11 @@ body {
   text-align: center;
 }
 
-.wrap .contact .contactArea .contactRight img {
+.wrap .contact .contactArea .contactRight .googleMap {
+  padding-top: 10%;
+}
+
+.wrap .contact .contactArea .contactRight .googleMap img {
   width: 80%;
   border-radius: 15px;
 }
@@ -945,7 +951,6 @@ body {
   }
   .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXWords {
     padding-top: 15px;
-    font-weight: lighter;
   }
   .wrap .contact .contactArea .contactLeft .contactLeft-2 {
     display: -webkit-box;

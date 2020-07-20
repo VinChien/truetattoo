@@ -2,7 +2,6 @@ $(document).ready(() => {
 
   // scrollLeft
   $('*').mousewheel(function (e, move) {
-    e.preventDefault();
     this.scrollLeft -= (move * 800);
   });
 
