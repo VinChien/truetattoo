@@ -5,41 +5,6 @@ $(document).ready(() => {
   //   this.scrollLeft -= (move * 500);
   // });
 
-  // contact a blank
-  let contactArray = ['.contactFB', '.contactIG'];
-  let contactHttps = ['https://www.facebook.com/truetattooedddie/', 'https://www.instagram.com/truetattooeddie/'];
-  for (let i = 0; i < contactArray.length; i++) {
-    document.querySelector(i).onclick = (e) => {
-      e.preventDefault();
-      for (let i = 0; i < contactHttps.length; i++) {
-        window.open(i);
-      }
-    }
-  }
-
-  // Add smooth scrolling to all links
-  $(".anchorPoint").on('click', function (e) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      e.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 100, function () {
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-
   // intro button effect
   document.querySelector('.button').onmousemove = (e) => {
 
@@ -51,26 +16,17 @@ $(document).ready(() => {
 
   }
 
-  // tooltips
-  $('[data-toggle="tooltip"]').tooltip();
-
-  // mNavMenuClick
-  $('.mNavMenuButton').click((e) => {
-    e.preventDefault();
-    // show mNavMenu
-    $('.mNavMenu').toggleClass('mNavMenuOpen');
-    // change button images 
-    $('.mNavMenuCloseW').toggleClass('displayNone');
-    $('.mNavMenuOpenW').toggleClass('displayInline');
-  });
-
-  // reset mNavmenuClick
-  $('.index, .about, .gallery, .process, .contact').click(function (e) {
-    e.preventDefault();
-    $('.mNavMenu').removeClass('mNavMenuOpen');
-    $('.mNavMenuCloseW').removeClass('displayNone');
-    $('.mNavMenuOpenW').removeClass('displayInline');
-  });
+  // contact a blank
+  let contactArray = ['.contactFB', '.contactIG'];
+  let contactHttps = ['https://www.facebook.com/truetattooedddie/', 'https://www.instagram.com/truetattooeddie/'];
+  for (let i = 0; i < contactArray.length; i++) {
+    document.querySelector(contactArray[i]).onclick = (e) => {
+      e.preventDefault();
+      for (let i = 0; i < contactHttps.length; i++) {
+        window.open(contactHttps[i]);
+      }
+    }
+  }
 
   // auto add galleryArea pic
   let addGalleryPhoto = document.getElementById("galleryArea");
@@ -97,6 +53,50 @@ $(document).ready(() => {
     }
   }
   mAddGalleryPhoto.innerHTML = mStrBox;
+
+  // Add smooth scrolling to all links
+  $(".anchorPoint").on('click', function (e) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      e.preventDefault();
+
+      // Store hash
+      let hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 100, function () {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  // tooltips
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // mNavMenuClick
+  $('.mNavMenuButton').click((e) => {
+    e.preventDefault();
+    // show mNavMenu
+    $('.mNavMenu').toggleClass('mNavMenuOpen');
+    // change button images 
+    $('.mNavMenuCloseW').toggleClass('displayNone');
+    $('.mNavMenuOpenW').toggleClass('displayInline');
+  });
+
+  // reset mNavmenuClick
+  $('.index, .about, .gallery, .process, .contact').click(function (e) {
+    e.preventDefault();
+    $('.mNavMenu').removeClass('mNavMenuOpen');
+    $('.mNavMenuCloseW').removeClass('displayNone');
+    $('.mNavMenuOpenW').removeClass('displayInline');
+  });
 
   // slick
   $('.galleryArea').slick({
