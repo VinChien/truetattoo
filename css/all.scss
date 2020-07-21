@@ -301,6 +301,9 @@ body {
                         text-indent: 101%;
                         overflow: hidden;
                         white-space: nowrap;
+                        .contactFB {
+                            background-image: url(/images/contactFBLogo.png);
+                        }
                         &:nth-child(1) {
                             background-image: url(/images/contactFBLogo.png);
                         }

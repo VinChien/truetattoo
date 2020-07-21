@@ -376,6 +376,10 @@ body {
   white-space: nowrap;
 }
 
+.wrap .contact .contactArea .contactLeft .contactLeft-3 a .contactFB {
+  background-image: url(/images/contactFBLogo.png);
+}
+
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(1) {
   background-image: url(/images/contactFBLogo.png);
 }
