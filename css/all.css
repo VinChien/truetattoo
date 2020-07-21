@@ -225,11 +225,25 @@ body {
 .wrap .gallery .galleryArea {
   margin: 0 auto;
   padding-top: 3%;
-  width: 1000px;
+  width: 900px;
 }
 
 .wrap .gallery .galleryArea img {
   border-radius: 15px;
+}
+
+.wrap .gallery .galleryArea .slick-dots :hover :before {
+  color: #47bcc5;
+}
+
+.wrap .gallery .galleryArea .slick-dots .slick-active :before {
+  color: #47bcc5;
+}
+
+.wrap .gallery .galleryAreaNav {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 300px;
 }
 
 .wrap .process {
@@ -368,13 +382,7 @@ body {
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: inline-block;
   width: 30px;
   height: 30px;
   text-indent: 101%;
@@ -388,6 +396,7 @@ body {
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(2) {
   background-image: url("../images/contactIGLogo30.png");
+  margin: 0 20px;
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(3) {

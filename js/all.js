@@ -32,12 +32,25 @@ $(document).ready(() => {
   let strBox = "";
   for (let i = 1; i < (photos + 1); i++) {
     if (i < 10) {
-      strBox += `<img src="./images/gallery_0${String(i)}.jpg" alt="">`;
+      strBox += `<img src="./images/gallery_0${String(i)}.jpg" alt="gallery images">`;
     } else {
-      strBox += `<img src="./images/gallery_${String(i)}.jpg" alt="">`;
+      strBox += `<img src="./images/gallery_${String(i)}.jpg" alt="gallery images">`;
     }
   }
   addGalleryPhoto.innerHTML = strBox;
+
+  // auto add galleryAreaNav pic
+  let nAddGalleryPhoto = document.getElementById("galleryAreaNav");
+  let nPhotos = 14;
+  let nStrBox = "";
+  for (let i = 1; i < (nPhotos + 1); i++) {
+    if (i < 10) {
+      nStrBox += `<img src="./images/gallery_0${String(i)}.jpg" alt="gallery images">`;
+    } else {
+      nStrBox += `<img src="./images/gallery_${String(i)}.jpg" alt="gallery images">`;
+    }
+  }
+  nAddGalleryPhoto.innerHTML = nStrBox;
 
   // auto add swiper-wrapper pic
   let mAddGalleryPhoto = document.getElementById("swiper-wrapper");
@@ -98,11 +111,23 @@ $(document).ready(() => {
 
   // slick
   $('.galleryArea').slick({
-    dots: true,
+    // dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     fade: true,
-    cssEase: 'linear',
+    autoplay: true,
+    autoplayspeed: 1000,
+    asNavFor: '.galleryAreaNav',
+    arrows:false
+  });
+  // slick nav
+  $('.galleryAreaNav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.galleryArea',
+    // dots: true,
+    centerMode: true,
+    focusOnSelect: true,
     autoplay: true,
     autoplayspeed: 1000
   });

@@ -168,10 +168,30 @@ body {
         .galleryArea {
             margin: 0 auto;
             padding-top: 3%;
-            width: 1000px;
+            width: 900px;
             img {
                 border-radius: 15px;
             }
+            
+            // slick-dots color
+            .slick-dots {
+                :hover {
+                    :before {
+                        color: $green;
+                    }
+                }
+                .slick-active {
+                    :before {
+                        color: $green;
+                    }
+                }
+            }
+        }
+        .galleryAreaNav {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 300px;
+            // height: 200px;
         }
     }
 
@@ -295,21 +315,21 @@ body {
                 }
                 .contactLeft-3 {
                     a {
-                        display: flex;
-                        flex-direction: row;
+                        display: inline-block;
                         width: 30px;
                         height: 30px;
                         text-indent: 101%;
                         overflow: hidden;
                         white-space: nowrap;
                         &:nth-child(1) {
-                            background-image: url('../images/contactFBLogo30.png');
+                            background-image: url("../images/contactFBLogo30.png");
                         }
                         &:nth-child(2) {
-                            background-image: url('../images/contactIGLogo30.png');
+                            background-image: url("../images/contactIGLogo30.png");
+                            margin: 0 20px;
                         }
                         &:nth-child(3) {
-                            background-image: url('../images/contactLINELogo30.png');
+                            background-image: url("../images/contactLINELogo30.png");
                         }
                     }
                     // img {
