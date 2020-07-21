@@ -169,29 +169,38 @@ body {
             margin: 0 auto;
             padding-top: 3%;
             width: 900px;
+            cursor: -webkit-grab;
+            cursor: grab;
+            :active {
+                cursor: -webkit-grabbing;
+                cursor: grabbing;
+            }
             img {
                 border-radius: 15px;
             }
-            
+
             // slick-dots color
-            .slick-dots {
-                :hover {
-                    :before {
-                        color: $green;
-                    }
-                }
-                .slick-active {
-                    :before {
-                        color: $green;
-                    }
-                }
-            }
+            // .slick-dots {
+            //     :hover {
+            //         :before {
+            //             color: $green;
+            //         }
+            //     }
+            //     .slick-active {
+            //         :before {
+            //             color: $green;
+            //         }
+            //     }
+            // }
         }
         .galleryAreaNav {
             margin: 0 auto;
             margin-top: 20px;
-            width: 300px;
-            // height: 200px;
+            width: 400px;
+            cursor: pointer;
+            img {
+                border-radius: 5px;
+            }
         }
     }
 

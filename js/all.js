@@ -113,23 +113,22 @@ $(document).ready(() => {
   $('.galleryArea').slick({
     // dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 900,
     fade: true,
     autoplay: true,
     autoplayspeed: 1000,
     asNavFor: '.galleryAreaNav',
-    arrows:false
+    arrows: false
   });
   // slick nav
   $('.galleryAreaNav').slick({
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.galleryArea',
-    // dots: true,
     centerMode: true,
     focusOnSelect: true,
     autoplay: true,
-    autoplayspeed: 1000
+    autoplayspeed: 1000,
   });
 
   // typed

@@ -226,24 +226,28 @@ body {
   margin: 0 auto;
   padding-top: 3%;
   width: 900px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.wrap .gallery .galleryArea :active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 .wrap .gallery .galleryArea img {
   border-radius: 15px;
 }
 
-.wrap .gallery .galleryArea .slick-dots :hover :before {
-  color: #47bcc5;
-}
-
-.wrap .gallery .galleryArea .slick-dots .slick-active :before {
-  color: #47bcc5;
-}
-
 .wrap .gallery .galleryAreaNav {
   margin: 0 auto;
   margin-top: 20px;
-  width: 300px;
+  width: 400px;
+  cursor: pointer;
+}
+
+.wrap .gallery .galleryAreaNav img {
+  border-radius: 5px;
 }
 
 .wrap .process {
