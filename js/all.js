@@ -29,15 +29,15 @@ $(document).ready(() => {
   // });
 
   // intro button effect
-  // document.querySelector('.button').onmousemove = (e) => {
+  document.querySelector('.button').onmousemove = (e) => {
 
-  //   const x = e.pageX - e.target.offsetLeft
-  //   const y = e.pageY - e.target.offsetTop
+    const x = e.pageX - e.target.offsetLeft
+    const y = e.pageY - e.target.offsetTop
 
-  //   e.target.style.setProperty('--x', `${x}px`)
-  //   e.target.style.setProperty('--y', `${y}px`)
+    e.target.style.setProperty('--x', `${x}px`)
+    e.target.style.setProperty('--y', `${y}px`)
 
-  // }
+  }
 
   // tooltips
   $('[data-toggle="tooltip"]').tooltip();
@@ -46,10 +46,18 @@ $(document).ready(() => {
   $('.mNavMenuButton').click((e) => {
     e.preventDefault();
     // show mNavMenu
-    $(".mNavMenu").toggleClass('mNavMenuOpen');
+    $('.mNavMenu').toggleClass('mNavMenuOpen');
     // change button images 
-    $(".mNavMenuCloseW").toggleClass('displayNone');
-    $(".mNavMenuOpenW").toggleClass('displayInline');
+    $('.mNavMenuCloseW').toggleClass('displayNone');
+    $('.mNavMenuOpenW').toggleClass('displayInline');
+  });
+
+  // reset mNavmenuClick
+  $('.index, .about, .gallery, .process, .contact').click(function (e) { 
+    e.preventDefault();
+    $('.mNavMenu').removeClass('mNavMenuOpen');
+    $('.mNavMenuCloseW').removeClass('displayNone');
+    $('.mNavMenuOpenW').removeClass('displayInline');
   });
 
   // auto add galleryArea pic

@@ -80,28 +80,44 @@ body {
   z-index: 3;
 }
 
-.wrap .intro .introLogo {
-  text-align: center;
-  margin-bottom: 4%;
-}
-
-.wrap .intro .introButton {
+.wrap .intro .button {
+  --x: 50%;
+  --y: 50%;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 1em 2em;
+  cursor: pointer;
+  outline: none;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #47bcc5, #9a9a9a) border-box;
+  background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #47bcc5, #9a9a9a) border-box;
   margin-bottom: 5%;
 }
 
-.wrap .intro .introButton a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  border: 1px solid #fff;
-  border-radius: 10px;
+.wrap .intro .button:hover {
+  border: 3px solid transparent;
 }
 
-.wrap .intro .introButton a:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border: 1px solid #47bcc5;
+.wrap .intro .button:hover a {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   color: #47bcc5;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.wrap .intro .button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.wrap .intro .introLogo {
+  text-align: center;
+  margin-bottom: 4%;
 }
 
 .wrap .intro .introCopyright {
