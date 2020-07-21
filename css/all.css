@@ -381,11 +381,11 @@ body {
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(2) {
-  background-image: url("/images/contactIGLogo.png");
+  background-image: url("../images/contactIGLogo.png");
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(3) {
-  background-image: url("/images/contactLINELogo.png");
+  background-image: url("../images/contactLINELogo.png");
 }
 
 .wrap .contact .contactArea .contactRight {
