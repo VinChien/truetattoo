@@ -377,7 +377,7 @@ body {
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(1) {
-  background-image: url("/images/contactFBLogo.png");
+  background-image: url("../images/contactFBLogo.png");
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(2) {
