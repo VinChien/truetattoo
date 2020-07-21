@@ -958,6 +958,7 @@ body {
   }
   .wrap .contact {
     border-top: 1px dashed #fff;
+    z-index: 0;
   }
   .wrap .contact .contactArea {
     display: -webkit-box;

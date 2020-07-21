@@ -957,6 +957,7 @@ body {
         .contact {
             // background-color: $black;
             border-top: 1px dashed $white;
+            z-index: 0;
             .contactArea {
                 display: flex;
                 flex-direction: column;
