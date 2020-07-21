@@ -259,6 +259,7 @@ body {
         display: flex;
         justify-content: center;
         position: relative;
+        z-index: 1;
         .contactArea {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -293,10 +294,26 @@ body {
                     }
                 }
                 .contactLeft-3 {
-                    z-index: 2;
-                    img {
-                        width: 20%;
+                    a {
+                        display: inline-block;
+                        width: 90px;
+                        height: 90px;
+                        text-indent: 101%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        &:nth-child(1) {
+                            background-image: url(/images/contactFBLogo.png);
+                        }
+                        &:nth-child(2) {
+                            background-image: url(/images/contactIGLogo.png);
+                        }
+                        &:nth-child(3) {
+                            background-image: url(/images/contactLINELogo.png);
+                        }
                     }
+                    // img {
+                    //     width: 20%;
+                    // }
                 }
             }
             .contactRight {

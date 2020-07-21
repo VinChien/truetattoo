@@ -1,7 +1,24 @@
 $(document).ready(() => {
 
+  // scrollLeft
+  // $('*').mousewheel(function (e, move) {
+  //   this.scrollLeft -= (move * 500);
+  // });
+
+  // contact a blank
+  let contactArray = ['.contactFB', '.contactIG'];
+  let contactHttps = ['https://www.facebook.com/truetattooedddie/', 'https://www.instagram.com/truetattooeddie/'];
+  for (let i = 0; i < contactArray.length; i++) {
+    document.querySelector(i).onclick = (e) => {
+      e.preventDefault();
+      for (let i = 0; i < contactHttps.length; i++) {
+        window.open(i);
+      }
+    }
+  }
+
   // Add smooth scrolling to all links
-  $("a").on('click', function (e) {
+  $(".anchorPoint").on('click', function (e) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -22,11 +39,6 @@ $(document).ready(() => {
       });
     } // End if
   });
-
-  // scrollLeft
-  // $('*').mousewheel(function (e, move) {
-  //   this.scrollLeft -= (move * 500);
-  // });
 
   // intro button effect
   document.querySelector('.button').onmousemove = (e) => {
@@ -53,7 +65,7 @@ $(document).ready(() => {
   });
 
   // reset mNavmenuClick
-  $('.index, .about, .gallery, .process, .contact').click(function (e) { 
+  $('.index, .about, .gallery, .process, .contact').click(function (e) {
     e.preventDefault();
     $('.mNavMenu').removeClass('mNavMenuOpen');
     $('.mNavMenuCloseW').removeClass('displayNone');
@@ -106,9 +118,7 @@ $(document).ready(() => {
     loop: true,
     smartBackspace: false,
   };
-
   var typed = new Typed('.fridayClose', options);
-
 
   // swiper
   var swiper = new Swiper('.swiper-container', {

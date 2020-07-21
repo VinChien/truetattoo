@@ -321,6 +321,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  z-index: 1;
 }
 
 .wrap .contact .contactArea {
@@ -366,12 +367,25 @@ body {
   line-height: 1.5;
 }
 
-.wrap .contact .contactArea .contactLeft .contactLeft-3 {
-  z-index: 2;
+.wrap .contact .contactArea .contactLeft .contactLeft-3 a {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.wrap .contact .contactArea .contactLeft .contactLeft-3 img {
-  width: 20%;
+.wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(1) {
+  background-image: url(/images/contactFBLogo.png);
+}
+
+.wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(2) {
+  background-image: url(/images/contactIGLogo.png);
+}
+
+.wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(3) {
+  background-image: url(/images/contactLINELogo.png);
 }
 
 .wrap .contact .contactArea .contactRight {
