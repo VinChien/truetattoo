@@ -295,20 +295,21 @@ body {
                 }
                 .contactLeft-3 {
                     a {
-                        display: inline-block;
-                        width: 90px;
-                        height: 90px;
+                        display: flex;
+                        flex-direction: row;
+                        width: 30px;
+                        height: 30px;
                         text-indent: 101%;
                         overflow: hidden;
                         white-space: nowrap;
                         &:nth-child(1) {
-                            background-image: url('../images/contactFBLogo.png');
+                            background-image: url('../images/contactFBLogo30.png');
                         }
                         &:nth-child(2) {
-                            background-image: url('../images/contactIGLogo.png');
+                            background-image: url('../images/contactIGLogo30.png');
                         }
                         &:nth-child(3) {
-                            background-image: url('../images/contactLINELogo.png');
+                            background-image: url('../images/contactLINELogo30.png');
                         }
                     }
                     // img {
@@ -319,7 +320,7 @@ body {
             .contactRight {
                 text-align: center;
                 .googleMap {
-                    padding-top: 10%;
+                    padding-top: 5%;
                     img {
                         width: 80%;
                         border-radius: 15px;

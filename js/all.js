@@ -22,9 +22,7 @@ $(document).ready(() => {
   for (let i = 0; i < contactArray.length; i++) {
     document.querySelector(contactArray[i]).onclick = (e) => {
       e.preventDefault();
-      for (let i = 0; i < contactHttps.length; i++) {
-        window.open(contactHttps[i]);
-      }
+      window.open(contactHttps[i]);
     }
   }
 
