@@ -7,6 +7,7 @@ $(function () {
 
   $('.introLogo').addClass('animate__animated animate__zoomIn');
   $('#introButton').attr('class', 'anchorPoint animate__animated animate__zoomIn animate__delay-1s');
+  $('.introCopyright').addClass('animate__animated animate__zoomIn animate__delay-2s');
 
   // intro button effect
   document.querySelector('.button').onmousemove = (e) => {
@@ -135,15 +136,25 @@ $(function () {
   });
 
   // typed
-  var options = {
-    strings: ['週五 休息', '禮拜五 公休'],
+  let contactOptions = {
+    strings: ['注意事項', '禮拜五 休息'],
     startDelay: 100,
     typeSpeed: 200,
     backSpeed: 100,
     loop: true,
     smartBackspace: false,
   };
-  var typed = new Typed('.fridayClose', options);
+  let contactTyped = new Typed('.fridayClose', contactOptions);
+
+  let aboutWordsOptions = {
+    strings: ['讓意識游離<br>空白的去感受<br><br>生活中的一切軌跡/信息<br>有時看似虛飾<br>卻也很篤實<br><br>維持最自然的姿勢<br>當找到的時候<br>就會是最好的成果<br><br>對此<br><br>我有著清晰的自性'],
+    startDelay: 400,
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: false,
+    smartBackspace: false,
+  };
+  let aboutWordsTyped = new Typed('.aboutWordsTyped', aboutWordsOptions);
 
   // swiper
   var swiper = new Swiper('.swiper-container', {

@@ -78,7 +78,7 @@ body {
             }
         }
         .animate__bounceIn {
-            --animate-duration: 3s;
+            --animate-duration: 4s;
         }
         // .introButton {
         //     margin-bottom: 5%;
@@ -135,7 +135,6 @@ body {
                 width: 90%;
             }
         }
-
         .aboutRight {
             display: flex;
             justify-content: space-around;
@@ -150,17 +149,14 @@ body {
                 }
             }
             .aboutWords {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                width: 250px;
+                height: 338px;
                 color: $white;
                 line-height: 1.5;
                 letter-spacing: 3px;
                 text-align: left;
                 font-size: 16px;
-                font-weight: lighter;
-                margin-bottom: -5%;
+                margin-bottom: -2%;
             }
         }
     }
@@ -171,7 +167,7 @@ body {
 
         .galleryArea {
             margin: auto;
-            padding-top: 8%;
+            padding-top: 6%;
             width: 900px;
             cursor: -webkit-grab;
             cursor: grab;
@@ -214,6 +210,9 @@ body {
         width: 100vw;
         height: 100vh;
         position: relative;
+        .cardArea {
+            letter-spacing: 1px;
+        }
         .processRightLogo {
             position: absolute;
             right: 0;
@@ -553,7 +552,17 @@ body {
         }
         .index {
             .tattooVideo {
-                margin-top: 15%;
+                margin-top: 12%;
+            }
+        }
+        .about {
+            .aboutRight {
+                margin-top: -10%;
+            }
+        }
+        .gallery {
+            .galleryArea {
+                padding-top: 1%;
             }
         }
         .process {
@@ -575,6 +584,15 @@ body {
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+        .contact {
+            .contactArea {
+                .contactRight {
+                    .googleMap {
+                        padding-top: 1%;
                     }
                 }
             }
@@ -606,6 +624,11 @@ body {
         .about {
             .aboutRight {
                 margin-top: -10%;
+            }
+        }
+        .gallery {
+            .galleryArea {
+                padding-top: 3.5%;
             }
         }
     }
