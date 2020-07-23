@@ -151,7 +151,7 @@ $(function () {
     startDelay: 400,
     typeSpeed: 100,
     backSpeed: 50,
-    loop: false,
+    loop: true,
     smartBackspace: false,
   };
   let aboutWordsTyped = new Typed('.aboutWordsTyped', aboutWordsOptions);
