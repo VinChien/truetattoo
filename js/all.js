@@ -9,17 +9,9 @@ $(function () {
   // for (let i = 0; i < buttonArray.length; i++) {
   //   $(buttonArray[i]).click(function (e) {
   //     e.preventDefault();
-  //     let hash = window.location.hash;
-  //     if (hash == '') {
-  //       hash = window.location.hash;
-  //     }
   //     console.log(buttonArray[i]);
-  //     if (hash == '#index') {
-  //       $(buttonArray[1]).css('border-bottom', '3px solid #47bcc5');
-  //       hash = '';
-  //     } else {
-  //       $(buttonArray[1]).css('border-bottom', '0px solid #47bcc5');
-  //     }
+  //     $(buttonArray[i]).css('border-bottom', '3px solid #47bcc5');
+  //     console.log($(buttonArray[i]).css('border-bottom'));
   //   });
   // }
 
