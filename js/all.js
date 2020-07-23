@@ -5,20 +5,29 @@ $(function () {
   //   this.scrollLeft -= (move * 500);
   // });
 
-  // let buttonArray = ['#introButton', '#navIndexButton', '#navAboutButton', '#navGalleryButton', '#navProcessButton', '#navContactButton'];
-  // for (let i = 0; i < buttonArray.length; i++) {
-  //   $(buttonArray[i]).click(function (e) {
-  //     e.preventDefault();
-  //     console.log(buttonArray[i]);
-  //     $(buttonArray[i]).css('border-bottom', '3px solid #47bcc5');
-  //     console.log($(buttonArray[i]).css('border-bottom'));
-  //   });
-  // }
-
-
   $('.introLogo').addClass('animate__animated animate__zoomIn');
   $('#introButton').attr('class', 'anchorPoint animate__animated animate__zoomIn animate__delay-1s');
   $('.introCopyright').addClass('animate__animated animate__zoomIn animate__delay-2s');
+
+  // navOption focus
+  let buttonArray = ['#introButton', '#navIndexButton', '#navAboutButton', '#navGalleryButton', '#navProcessButton', '#navContactButton'];
+  for (let i = 0; i < buttonArray.length; i++) {
+    $(buttonArray[i]).click(function (e) {
+      e.preventDefault();
+      console.log(buttonArray[i]);
+
+      // reset
+      for (let i = 0; i < buttonArray.length; i++) {
+        $(buttonArray[i]).removeClass('navOptionFocus');
+      }
+      // set
+      if (buttonArray[i] != '#introButton') {
+        $(buttonArray[i]).addClass('navOptionFocus');
+      } else {
+        $(buttonArray[1]).addClass('navOptionFocus');
+      }
+    });
+  }
 
   // intro button effect
   document.querySelector('.button').onmousemove = (e) => {

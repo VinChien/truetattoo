@@ -10,13 +10,24 @@
   display: inline !important;
 }
 
+.navOptionFocus {
+  border-bottom: 1px dashed #47bcc5 !important;
+}
+
+.navOptionFocus:hover {
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+  color: #fff !important;
+  border-bottom: 3px solid #47bcc5 !important;
+}
+
 .tooltip-custom {
   margin-bottom: 10px;
 }
 
 .tooltip-custom .tooltip-inner {
   background-color: #47bcc5;
-  color: #ffffff;
+  color: #fff;
   font-size: 12px;
   padding: 10px;
   border-radius: 50%;

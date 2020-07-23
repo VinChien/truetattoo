@@ -1,3 +1,8 @@
+$black: #000;
+$white: #fff;
+$gray: #9a9a9a;
+$green: #47bcc5;
+
 .mNavMenuOpen {
     right: 1% !important;
 }
@@ -8,6 +13,15 @@
 
 .displayInline {
     display: inline !important;
+}
+
+.navOptionFocus {
+    border-bottom: 1px dashed $green !important;
+    &:hover {
+        transition: 0.3s !important;
+        color: $white !important;
+        border-bottom: 3px solid $green !important;
+    }
 }
 
 @mixin tooltip-custom($bg-color, $color, $margin-bottom, $padding, $font-size) {
@@ -38,5 +52,5 @@
 }
 
 .tooltip-custom {
-    @include tooltip-custom(#47bcc5, #ffffff, 10px, 10px, 12px);
+    @include tooltip-custom($green, $white, 10px, 10px, 12px);
 }
