@@ -8,18 +8,16 @@ $green: #47bcc5;
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
     line-height: 1;
     scroll-behavior: smooth;
-
     -webkit-appearance: none;
     -moz-appearance: none;
-
-    // // iphneX
-    // padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 body {
-    background-color: $gray;
+    background-color: $black;
 }
 
 // screen 1920
@@ -39,42 +37,48 @@ body {
         height: 100vh;
         z-index: 3;
 
-        .button {
-            --x: 50%;
-            --y: 50%;
-
-            position: relative;
-            appearance: none;
-            padding: 1em 2em;
-            cursor: pointer;
-            outline: none;
-            border-radius: 100px;
-
-            // The magic
-            border: 2px solid transparent;
-            background: linear-gradient(#000, #000) padding-box,
-                radial-gradient(farthest-corner at var(--x) var(--y), $green, $gray) border-box;
-
+        .introLogo {
+            text-align: center;
+            margin: 5% auto;
+            img {
+                width: 80%;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 14px;
+            padding: 1%;
             margin-bottom: 5%;
-            &:hover {
-                border: 3px solid transparent;
-                a {
+
+            .button {
+                --x: 50%;
+                --y: 50%;
+
+                position: relative;
+                appearance: none;
+                padding: 1em 2em;
+                cursor: pointer;
+                outline: none;
+                border-radius: 100px;
+
+                // The magic
+                border: 2px solid transparent;
+                background: linear-gradient(#000, #000) padding-box,
+                    radial-gradient(farthest-corner at var(--x) var(--y), $green, $gray) border-box;
+
+                color: $white;
+                &:hover {
+                    border: 3px solid transparent;
                     transition: 0.1s;
                     color: $green;
                     font-weight: bolder;
-                    font-size: 20px;
+                    font-size: 18px;
                 }
             }
-            a {
-                text-decoration: none;
-                color: $white;
-                font-size: 16px;
-            }
         }
-
-        .introLogo {
-            text-align: center;
-            margin-bottom: 4%;
+        .animate__bounceIn {
+            --animate-duration: 3s;
         }
         // .introButton {
         //     margin-bottom: 5%;
@@ -166,8 +170,8 @@ body {
         height: 100vh;
 
         .galleryArea {
-            margin: 0 auto;
-            padding-top: 3%;
+            margin: auto;
+            padding-top: 8%;
             width: 900px;
             cursor: -webkit-grab;
             cursor: grab;
@@ -194,12 +198,14 @@ body {
             // }
         }
         .galleryAreaNav {
+            // background-color: $green;
             margin: 0 auto;
             margin-top: 20px;
             width: 400px;
+            cursor: -webkit-pointer;
             cursor: pointer;
             img {
-                border-radius: 5px;
+                border-radius: 20%;
             }
         }
     }
@@ -220,10 +226,11 @@ body {
         }
 
         .cardArea {
-            .processCard1 {
-                margin: 2% auto 0;
+            .processCard1,
+            .processCard2 {
+                margin: 1% auto 0;
                 padding: 20px;
-                background-color: $black;
+                border: 1px dashed $gray;
                 border-radius: 15px;
                 width: 900px;
                 .processTitle {
@@ -251,11 +258,7 @@ body {
                 }
             }
             .processCard2 {
-                margin: 40px auto 0;
-                padding: 20px;
-                background-color: $black;
-                border-radius: 15px;
-                width: 900px;
+                // margin: 20px auto 0;
                 .processTitle {
                     border-bottom: 1px dashed $gray;
                     text-align: center;
@@ -293,7 +296,6 @@ body {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             padding-top: 5%;
-            // padding-left: 2%;
             .contactLeft {
                 text-align: center;
                 letter-spacing: 3px;
@@ -304,7 +306,6 @@ body {
                     }
                     .contactXWords {
                         color: $white;
-
                         span {
                             line-height: 2;
                         }
@@ -341,9 +342,6 @@ body {
                             background-image: url("../images/contactLINELogo30.png");
                         }
                     }
-                    // img {
-                    //     width: 20%;
-                    // }
                 }
             }
             .contactRight {
@@ -359,10 +357,11 @@ body {
         }
         .contactLastLogo {
             position: absolute;
-            background-color: $black;
             padding: 100% 1% 5%;
             right: 0;
             bottom: 0;
+            border-left: 1px dashed $gray;
+            opacity: 0.3;
         }
     }
 
@@ -950,6 +949,9 @@ body {
             height: 100vh;
             background-color: $black;
             .galleryArea {
+                display: none;
+            }
+            .galleryAreaNav {
                 display: none;
             }
         }

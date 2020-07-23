@@ -1,9 +1,12 @@
-$(document).ready(() => {
+$(function () {
 
   // scrollLeft
   // $('*').mousewheel(function (e, move) {
   //   this.scrollLeft -= (move * 500);
   // });
+
+  $('.introLogo').addClass('animate__animated animate__zoomIn');
+  $('#introButton').attr('class', 'anchorPoint animate__animated animate__zoomIn animate__delay-1s');
 
   // intro button effect
   document.querySelector('.button').onmousemove = (e) => {
