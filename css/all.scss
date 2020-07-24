@@ -132,7 +132,8 @@ body {
             margin-right: 5%;
             img {
                 height: auto;
-                width: 90%;
+                width: 450px;
+                border-radius: 15px;
             }
         }
         .aboutRight {
@@ -150,13 +151,18 @@ body {
             }
             .aboutWords {
                 width: 250px;
-                height: 338px;
+                height: 400px;
                 color: $white;
                 line-height: 1.5;
                 letter-spacing: 3px;
                 text-align: left;
                 font-size: 16px;
+                padding: 5% 0;
                 margin-bottom: -2%;
+                border-top: 1px dashed;
+                border-bottom: 1px dashed;
+                border-radius: 10px;
+                border-color: $gray;
             }
         }
     }
@@ -212,19 +218,6 @@ body {
         position: relative;
         .cardArea {
             letter-spacing: 1px;
-        }
-        .processRightLogo {
-            position: absolute;
-            right: 0;
-            bottom: 50px;
-            img {
-                height: auto;
-                width: 80%;
-                opacity: 0.3;
-            }
-        }
-
-        .cardArea {
             .processCard1,
             .processCard2 {
                 margin: 1% auto 0;
@@ -256,30 +249,15 @@ body {
                     }
                 }
             }
-            .processCard2 {
-                // margin: 20px auto 0;
-                .processTitle {
-                    border-bottom: 1px dashed $gray;
-                    text-align: center;
-                    h3 {
-                        color: $white;
-                    }
-                }
-                .processContent {
-                    ul {
-                        margin: 0;
-                        padding: 3%;
-                        padding-top: 4%;
-                        list-style-type: upper-roman;
-                        color: $green;
-                        li {
-                            p {
-                                color: $white;
-                                font-size: 16px;
-                            }
-                        }
-                    }
-                }
+        }
+        .processRightLogo {
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+            img {
+                height: auto;
+                width: 80%;
+                opacity: 0.3;
             }
         }
     }
@@ -447,7 +425,6 @@ body {
             border-top: 0.5px dashed $gray;
             p {
                 font-size: 16px;
-                font-weight: lighter;
             }
         }
     }
@@ -548,11 +525,6 @@ body {
             a {
                 margin-bottom: 2%;
             }
-            .introLogo {
-                img {
-                    width: 80%;
-                }
-            }
         }
         .index {
             .tattooVideo {
@@ -560,9 +532,13 @@ body {
             }
         }
         .about {
+            .aboutLeftImg,
             .aboutRight {
-                margin-top: -15%;
+                margin-top: -5%;
+            }
+            .aboutRight {
                 .aboutLogo {
+                    margin-right: 15%;
                     img {
                         width: 80%;
                     }
@@ -574,7 +550,7 @@ body {
         }
         .gallery {
             .galleryArea {
-                padding-top: 1%;
+                width: 700px;
             }
         }
         .process {
@@ -597,6 +573,11 @@ body {
                             }
                         }
                     }
+                }
+            }
+            .processRightLogo {
+                img {
+                    width: 70%;
                 }
             }
         }
@@ -635,7 +616,6 @@ body {
         }
         .about {
             .aboutRight {
-                margin-top: -14%;
                 margin-left: -2%;
                 .aboutLogo {
                     img {
@@ -650,7 +630,6 @@ body {
         .gallery {
             .galleryArea {
                 width: 700px;
-                padding-top: 3.5%;
             }
         }
         .process {
@@ -692,13 +671,7 @@ body {
         }
         .index {
             .tattooVideo {
-                margin-top: 15%;
-            }
-        }
-        .gallery {
-            .galleryArea {
-                padding-top: 6%;
-                width: 900px;
+                margin-top: 12%;
             }
         }
     }
@@ -710,19 +683,23 @@ body {
         .navWrap {
             .navOption {
                 .navOptionA {
-                    margin: 20px 0;
                     a {
-                        padding: 15px;
+                        padding: 15px 22px;
+                        font-size: 12px;
                     }
                 }
                 .navOptionLine {
                     margin: 80% auto;
                 }
             }
+            .navCopyright {
+                p {
+                    font-size: 8px;
+                }
+            }
         }
         .intro {
             .introLogo {
-                margin-bottom: 7%;
                 img {
                     width: 70%;
                 }
@@ -730,30 +707,64 @@ body {
         }
         .index {
             .tattooVideo {
-                margin-top: 10%;
+                margin-top: 8%;
             }
         }
         .about {
+            .aboutLeftImg {
+                margin-top: -6%;
+                img {
+                    width: 350px;
+                }
+            }
             .aboutRight {
-                margin-left: -5%;
-                margin-top: -15%;
+                margin-left: 0;
+                margin-top: -6%;
+                .aboutLogo {
+                    img {
+                        width: 60%;
+                    }
+                }
+                .aboutWords {
+                    font-size: 12px;
+                    height: 305px;
+                    width: 190px;
+                }
             }
         }
         .gallery {
             .galleryArea {
-                width: 800px;
+                width: 600px;
+                padding-top: 5%;
             }
         }
         .process {
+            .cardArea {
+                .processCard1,
+                .processCard2 {
+                    width: 500px;
+                    .processContent {
+                        ul {
+                            li {
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .processRightLogo {
-                right: 20px;
-                bottom: 60px;
+                right: -50px;
+                bottom: 50px;
+                img {
+                    width: 60%;
+                }
             }
         }
         .contact {
             .contactArea {
                 width: 50%;
-                padding-top: 5%;
                 .contactLeft {
                     .contactLeft-1 {
                         margin-bottom: 10%;
@@ -761,6 +772,13 @@ body {
                             margin-bottom: 10%;
                             img {
                                 width: 30%;
+                            }
+                        }
+                    }
+                    .contactLeft-2 {
+                        .addressImg {
+                            img {
+                                width: 30px;
                             }
                         }
                     }
@@ -798,18 +816,15 @@ body {
                 .navOptionA {
                     margin: 15px 0;
                     a {
-                        padding: 15px 10px;
+                        padding: 15px;
                     }
                 }
                 .navOptionLine {
-                    margin: 60% auto;
+                    margin: 40% auto;
                 }
             }
             .navCopyright {
                 padding-top: 11px;
-                p {
-                    font-size: 14px;
-                }
             }
         }
         .intro {
@@ -818,12 +833,28 @@ body {
                     width: 60%;
                 }
             }
+            .introCopyright {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        .index {
+            .tattooVideo {
+                margin-top: 6%;
+            }
         }
         .about {
             .aboutRight {
                 .aboutWords {
                     margin-left: -15%;
                 }
+            }
+        }
+        .gallery {
+            .galleryArea {
+                width: 500px;
+                padding-top: 6%;
             }
         }
         .process {
@@ -841,7 +872,12 @@ body {
             .contactArea {
                 .contactRight {
                     text-align: left;
-                    padding-top: 10%;
+                }
+            }
+            .contactLastLogo {
+                right: -40px;
+                img {
+                    width: 70%;
                 }
             }
         }
@@ -880,42 +916,59 @@ body {
         }
         .index {
             .tattooVideo {
-                margin-top: 15%;
+                margin-top: 10%;
             }
         }
         .about {
             .aboutLeftImg {
-                margin: 0;
-                width: 100%;
-                overflow: hidden;
-                img {
-                    margin-left: -15%;
-                }
+                margin-right: 0;
             }
             .aboutRight {
-                // margin-left: -5%;
-                padding-right: 1%;
                 .aboutLogo {
-                    margin-top: -15%;
-                    margin-left: -35%;
                     img {
-                        padding: 0;
-                        width: 60%;
+                        width: 50%;
                     }
                 }
-                .aboutWords {
-                    margin: -20% 0;
-                    margin-left: -20%;
-                    font-size: 14px;
+            }
+        }
+        .process {
+            .cardArea {
+                .processCard1,
+                .processCard2 {
+                    width: 400px;
+                    .processContent {
+                        ul {
+                            padding: 6%;
+                        }
+                    }
                 }
             }
         }
         .contact {
             .contactArea {
-                padding-top: 15%;
-                .contactRight {
-                    padding-top: 15%;
+                padding-top: 10%;
+                .contactLeft {
+                    font-size: 12px;
+                    .contactLeft-2 {
+                        margin-top: 40%;
+                        .addressWords {
+                            font-size: 12px;
+                        }
+                    }
+                    .contactLeft-3 {
+                        margin-top: -70%;
+                    }
                 }
+                .contactRight {
+                    .googleMap {
+                        img {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            .contactLastLogo {
+                bottom: 15px;
             }
         }
     }

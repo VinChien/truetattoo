@@ -192,7 +192,8 @@ body {
 
 .wrap .about .aboutLeftImg img {
   height: auto;
-  width: 90%;
+  width: 450px;
+  border-radius: 15px;
 }
 
 .wrap .about .aboutRight {
@@ -222,13 +223,18 @@ body {
 
 .wrap .about .aboutRight .aboutWords {
   width: 250px;
-  height: 338px;
+  height: 400px;
   color: #fff;
   line-height: 1.5;
   letter-spacing: 3px;
   text-align: left;
   font-size: 16px;
+  padding: 5% 0;
   margin-bottom: -2%;
+  border-top: 1px dashed;
+  border-bottom: 1px dashed;
+  border-radius: 10px;
+  border-color: #9a9a9a;
 }
 
 .wrap .gallery {
@@ -275,18 +281,6 @@ body {
   letter-spacing: 1px;
 }
 
-.wrap .process .processRightLogo {
-  position: absolute;
-  right: 0;
-  bottom: 50px;
-}
-
-.wrap .process .processRightLogo img {
-  height: auto;
-  width: 80%;
-  opacity: 0.3;
-}
-
 .wrap .process .cardArea .processCard1,
 .wrap .process .cardArea .processCard2 {
   margin: 1% auto 0;
@@ -323,26 +317,16 @@ body {
   line-height: 1.5;
 }
 
-.wrap .process .cardArea .processCard2 .processTitle {
-  border-bottom: 1px dashed #9a9a9a;
-  text-align: center;
+.wrap .process .processRightLogo {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
 }
 
-.wrap .process .cardArea .processCard2 .processTitle h3 {
-  color: #fff;
-}
-
-.wrap .process .cardArea .processCard2 .processContent ul {
-  margin: 0;
-  padding: 3%;
-  padding-top: 4%;
-  list-style-type: upper-roman;
-  color: #47bcc5;
-}
-
-.wrap .process .cardArea .processCard2 .processContent ul li p {
-  color: #fff;
-  font-size: 16px;
+.wrap .process .processRightLogo img {
+  height: auto;
+  width: 80%;
+  opacity: 0.3;
 }
 
 .wrap .contact {
@@ -550,7 +534,6 @@ body {
 
 .wrap .navWrap .navCopyright p {
   font-size: 16px;
-  font-weight: lighter;
 }
 
 .wrap .mNavWrap {
@@ -656,14 +639,15 @@ body {
   .wrap .intro a {
     margin-bottom: 2%;
   }
-  .wrap .intro .introLogo img {
-    width: 80%;
-  }
   .wrap .index .tattooVideo {
     margin-top: 12%;
   }
+  .wrap .about .aboutLeftImg,
   .wrap .about .aboutRight {
-    margin-top: -15%;
+    margin-top: -5%;
+  }
+  .wrap .about .aboutRight .aboutLogo {
+    margin-right: 15%;
   }
   .wrap .about .aboutRight .aboutLogo img {
     width: 80%;
@@ -672,7 +656,7 @@ body {
     margin-bottom: -5%;
   }
   .wrap .gallery .galleryArea {
-    padding-top: 1%;
+    width: 700px;
   }
   .wrap .process .cardArea {
     display: -webkit-box;
@@ -691,6 +675,9 @@ body {
   .wrap .process .cardArea .processCard2 .processContent ul li p {
     line-height: 1.5;
   }
+  .wrap .process .processRightLogo img {
+    width: 70%;
+  }
   .wrap .contact .contactArea .contactRight .googleMap {
     padding-top: 1%;
   }
@@ -707,7 +694,6 @@ body {
     margin-top: 8%;
   }
   .wrap .about .aboutRight {
-    margin-top: -14%;
     margin-left: -2%;
   }
   .wrap .about .aboutRight .aboutLogo img {
@@ -718,7 +704,6 @@ body {
   }
   .wrap .gallery .galleryArea {
     width: 700px;
-    padding-top: 3.5%;
   }
   .wrap .process .cardArea {
     padding-top: 6%;
@@ -742,47 +727,66 @@ body {
     margin: 100% auto;
   }
   .wrap .index .tattooVideo {
-    margin-top: 15%;
-  }
-  .wrap .gallery .galleryArea {
-    padding-top: 6%;
-    width: 900px;
+    margin-top: 12%;
   }
 }
 
 @media screen and (max-width: 1366px) {
-  .wrap .navWrap .navOption .navOptionA {
-    margin: 20px 0;
-  }
   .wrap .navWrap .navOption .navOptionA a {
-    padding: 15px;
+    padding: 15px 22px;
+    font-size: 12px;
   }
   .wrap .navWrap .navOption .navOptionLine {
     margin: 80% auto;
   }
-  .wrap .intro .introLogo {
-    margin-bottom: 7%;
+  .wrap .navWrap .navCopyright p {
+    font-size: 8px;
   }
   .wrap .intro .introLogo img {
     width: 70%;
   }
   .wrap .index .tattooVideo {
-    margin-top: 10%;
+    margin-top: 8%;
+  }
+  .wrap .about .aboutLeftImg {
+    margin-top: -6%;
+  }
+  .wrap .about .aboutLeftImg img {
+    width: 350px;
   }
   .wrap .about .aboutRight {
-    margin-left: -5%;
-    margin-top: -15%;
+    margin-left: 0;
+    margin-top: -6%;
+  }
+  .wrap .about .aboutRight .aboutLogo img {
+    width: 60%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    font-size: 12px;
+    height: 305px;
+    width: 190px;
   }
   .wrap .gallery .galleryArea {
-    width: 800px;
+    width: 600px;
+    padding-top: 5%;
+  }
+  .wrap .process .cardArea .processCard1,
+  .wrap .process .cardArea .processCard2 {
+    width: 500px;
+  }
+  .wrap .process .cardArea .processCard1 .processContent ul li p,
+  .wrap .process .cardArea .processCard2 .processContent ul li p {
+    font-size: 12px;
   }
   .wrap .process .processRightLogo {
-    right: 20px;
-    bottom: 60px;
+    right: -50px;
+    bottom: 50px;
+  }
+  .wrap .process .processRightLogo img {
+    width: 60%;
   }
   .wrap .contact .contactArea {
     width: 50%;
-    padding-top: 5%;
   }
   .wrap .contact .contactArea .contactLeft .contactLeft-1 {
     margin-bottom: 10%;
@@ -792,6 +796,9 @@ body {
   }
   .wrap .contact .contactArea .contactLeft .contactLeft-1 .contactXLogo img {
     width: 30%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 .addressImg img {
+    width: 30px;
   }
   .wrap .contact .contactArea .contactLeft .contactLeft-3 img {
     width: 15%;
@@ -814,22 +821,29 @@ body {
     margin: 15px 0;
   }
   .wrap .navWrap .navOption .navOptionA a {
-    padding: 15px 10px;
+    padding: 15px;
   }
   .wrap .navWrap .navOption .navOptionLine {
-    margin: 60% auto;
+    margin: 40% auto;
   }
   .wrap .navWrap .navCopyright {
     padding-top: 11px;
   }
-  .wrap .navWrap .navCopyright p {
-    font-size: 14px;
-  }
   .wrap .intro .introLogo img {
     width: 60%;
   }
+  .wrap .intro .introCopyright p {
+    font-size: 12px;
+  }
+  .wrap .index .tattooVideo {
+    margin-top: 6%;
+  }
   .wrap .about .aboutRight .aboutWords {
     margin-left: -15%;
+  }
+  .wrap .gallery .galleryArea {
+    width: 500px;
+    padding-top: 6%;
   }
   .wrap .process .processRightLogo {
     right: 0;
@@ -842,7 +856,12 @@ body {
   }
   .wrap .contact .contactArea .contactRight {
     text-align: left;
-    padding-top: 10%;
+  }
+  .wrap .contact .contactLastLogo {
+    right: -40px;
+  }
+  .wrap .contact .contactLastLogo img {
+    width: 70%;
   }
 }
 
@@ -868,37 +887,42 @@ body {
     font-size: 12px;
   }
   .wrap .index .tattooVideo {
-    margin-top: 15%;
+    margin-top: 10%;
   }
   .wrap .about .aboutLeftImg {
-    margin: 0;
-    width: 100%;
-    overflow: hidden;
-  }
-  .wrap .about .aboutLeftImg img {
-    margin-left: -15%;
-  }
-  .wrap .about .aboutRight {
-    padding-right: 1%;
-  }
-  .wrap .about .aboutRight .aboutLogo {
-    margin-top: -15%;
-    margin-left: -35%;
+    margin-right: 0;
   }
   .wrap .about .aboutRight .aboutLogo img {
-    padding: 0;
-    width: 60%;
+    width: 50%;
   }
-  .wrap .about .aboutRight .aboutWords {
-    margin: -20% 0;
-    margin-left: -20%;
-    font-size: 14px;
+  .wrap .process .cardArea .processCard1,
+  .wrap .process .cardArea .processCard2 {
+    width: 400px;
+  }
+  .wrap .process .cardArea .processCard1 .processContent ul,
+  .wrap .process .cardArea .processCard2 .processContent ul {
+    padding: 6%;
   }
   .wrap .contact .contactArea {
-    padding-top: 15%;
+    padding-top: 10%;
   }
-  .wrap .contact .contactArea .contactRight {
-    padding-top: 15%;
+  .wrap .contact .contactArea .contactLeft {
+    font-size: 12px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 {
+    margin-top: 40%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 .addressWords {
+    font-size: 12px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-3 {
+    margin-top: -70%;
+  }
+  .wrap .contact .contactArea .contactRight .googleMap img {
+    width: 90%;
+  }
+  .wrap .contact .contactLastLogo {
+    bottom: 15px;
   }
 }
 
