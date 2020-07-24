@@ -11,14 +11,16 @@
 }
 
 .navOptionFocus {
+  -webkit-transition: 1s !important;
+  transition: 1s !important;
+  border-top: 1px dashed #47bcc5 !important;
   border-bottom: 1px dashed #47bcc5 !important;
+  border-radius: 10px !important;
 }
 
 .navOptionFocus:hover {
-  -webkit-transition: 0.3s !important;
-  transition: 0.3s !important;
   color: #fff !important;
-  border-bottom: 3px solid #47bcc5 !important;
+  border-bottom: 1px solid #47bcc5 !important;
 }
 
 .tooltip-custom {
@@ -353,7 +355,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  z-index: 1;
 }
 
 .wrap .contact .contactArea {
@@ -434,6 +435,10 @@ body {
   border-radius: 15px;
 }
 
+.wrap .contact .contactArea .contactRight .googleMap img:hover {
+  cursor: pointer;
+}
+
 .wrap .contact .contactLastLogo {
   position: absolute;
   padding: 100% 1% 5%;
@@ -507,10 +512,10 @@ body {
 }
 
 .wrap .navWrap .navOption .navOptionA:hover a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 1s;
+  transition: 1s;
   color: #fff;
-  border-bottom: 3px solid #47bcc5;
+  border-bottom: 1px solid #47bcc5;
 }
 
 .wrap .navWrap .navOption .navOptionA a {
@@ -648,8 +653,8 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
-  .wrap .intro .introLogo {
-    margin-bottom: 6%;
+  .wrap .intro a {
+    margin-bottom: 2%;
   }
   .wrap .intro .introLogo img {
     width: 80%;
@@ -658,7 +663,13 @@ body {
     margin-top: 12%;
   }
   .wrap .about .aboutRight {
-    margin-top: -10%;
+    margin-top: -15%;
+  }
+  .wrap .about .aboutRight .aboutLogo img {
+    width: 80%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    margin-bottom: -5%;
   }
   .wrap .gallery .galleryArea {
     padding-top: 1%;
@@ -693,13 +704,33 @@ body {
     margin: 60% auto;
   }
   .wrap .index .tattooVideo {
-    margin-top: 12%;
+    margin-top: 8%;
   }
   .wrap .about .aboutRight {
-    margin-top: -10%;
+    margin-top: -14%;
+    margin-left: -2%;
+  }
+  .wrap .about .aboutRight .aboutLogo img {
+    width: 70%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    margin-bottom: 0;
   }
   .wrap .gallery .galleryArea {
+    width: 700px;
     padding-top: 3.5%;
+  }
+  .wrap .process .cardArea {
+    padding-top: 6%;
+  }
+  .wrap .contact .contactArea {
+    padding-top: 4%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 {
+    margin-top: 28%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-3 {
+    margin-top: -60%;
   }
 }
 

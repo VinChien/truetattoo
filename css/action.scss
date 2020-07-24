@@ -16,11 +16,13 @@ $green: #47bcc5;
 }
 
 .navOptionFocus {
+    transition: 1s !important;
+    border-top: 1px dashed $green !important;
     border-bottom: 1px dashed $green !important;
+    border-radius: 10px !important;
     &:hover {
-        transition: 0.3s !important;
         color: $white !important;
-        border-bottom: 3px solid $green !important;
+        border-bottom: 1px solid $green !important;
     }
 }
 

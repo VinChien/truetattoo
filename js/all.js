@@ -5,6 +5,7 @@ $(function () {
   //   this.scrollLeft -= (move * 500);
   // });
 
+  // intro effects
   $('.introLogo').addClass('animate__animated animate__zoomIn');
   $('#introButton').attr('class', 'anchorPoint animate__animated animate__zoomIn animate__delay-1s');
   $('.introCopyright').addClass('animate__animated animate__zoomIn animate__delay-2s');
@@ -14,8 +15,6 @@ $(function () {
   for (let i = 0; i < buttonArray.length; i++) {
     $(buttonArray[i]).click(function (e) {
       e.preventDefault();
-      console.log(buttonArray[i]);
-
       // reset
       for (let i = 0; i < buttonArray.length; i++) {
         $(buttonArray[i]).removeClass('navOptionFocus');
@@ -41,8 +40,8 @@ $(function () {
   }
 
   // contact a blank
-  let contactArray = ['.contactFB', '.contactIG'];
-  let contactHttps = ['https://www.facebook.com/truetattooedddie/', 'https://www.instagram.com/truetattooeddie/'];
+  let contactArray = ['.contactFB', '.contactIG', '.googleMap'];
+  let contactHttps = ['https://www.facebook.com/truetattooedddie/', 'https://www.instagram.com/truetattooeddie/' ,'https://www.google.com.tw/maps/place/%E8%A6%8B%E7%9C%9F%E5%88%BA%E9%9D%92TRUETATTOO/@24.154283,120.6954716,19z/data=!4m13!1m7!3m6!1s0x34693d5bfcaab7f7:0xc23d8d23c45a4e8e!2zNDA05Y-w5Lit5biC5YyX5Y2A6Ieq5by36KGXNDPlt7czMOW8hDE0LTPomZ82Rg!3b1!8m2!3d24.1543021!4d120.6954894!3m4!1s0x34693d6bd5942b93:0x7dccee5d4d767145!8m2!3d24.154171!4d120.6954916?hl=zh-TW'];
   for (let i = 0; i < contactArray.length; i++) {
     document.querySelector(contactArray[i]).onclick = (e) => {
       e.preventDefault();
@@ -167,7 +166,7 @@ $(function () {
   let contactTyped = new Typed('.fridayClose', contactOptions);
 
   let aboutWordsOptions = {
-    strings: ['讓意識游離<br>空白的去感受<br><br>生活中的一切軌跡/信息<br>有時看似虛飾<br>卻也很篤實<br><br>維持最自然的姿勢<br>當找到的時候<br>就會是最好的成果<br><br>對此<br><br>我有著清晰的自性'],
+    strings: ['讓意識游離<br>空白的去感受<br><br>生活中的一切軌跡/訊息<br>有時看似虛飾<br>卻也很篤實<br><br>維持最自然的姿勢<br>當找到的時候<br>就會是最好的成果<br><br>對此<br><br>我有著清晰的自性'],
     startDelay: 400,
     typeSpeed: 100,
     backSpeed: 50,

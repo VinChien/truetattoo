@@ -290,7 +290,6 @@ body {
         display: flex;
         justify-content: center;
         position: relative;
-        z-index: 1;
         .contactArea {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -350,6 +349,9 @@ body {
                     img {
                         width: 80%;
                         border-radius: 15px;
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -412,9 +414,9 @@ body {
                 margin: 20px auto;
                 &:hover {
                     a {
-                        transition: 0.3s;
+                        transition: 1s;
                         color: $white;
-                        border-bottom: 3px solid $green;
+                        border-bottom: 1px solid $green;
                     }
                 }
                 a {
@@ -543,8 +545,10 @@ body {
 @media screen and (max-width: 1600px) {
     .wrap {
         .intro {
+            a {
+                margin-bottom: 2%;
+            }
             .introLogo {
-                margin-bottom: 6%;
                 img {
                     width: 80%;
                 }
@@ -557,7 +561,15 @@ body {
         }
         .about {
             .aboutRight {
-                margin-top: -10%;
+                margin-top: -15%;
+                .aboutLogo {
+                    img {
+                        width: 80%;
+                    }
+                }
+                .aboutWords {
+                    margin-bottom: -5%;
+                }
             }
         }
         .gallery {
@@ -618,17 +630,45 @@ body {
         }
         .index {
             .tattooVideo {
-                margin-top: 12%;
+                margin-top: 8%;
             }
         }
         .about {
             .aboutRight {
-                margin-top: -10%;
+                margin-top: -14%;
+                margin-left: -2%;
+                .aboutLogo {
+                    img {
+                        width: 70%;
+                    }
+                }
+                .aboutWords {
+                    margin-bottom: 0;
+                }
             }
         }
         .gallery {
             .galleryArea {
+                width: 700px;
                 padding-top: 3.5%;
+            }
+        }
+        .process {
+            .cardArea {
+                padding-top: 6%;
+            }
+        }
+        .contact {
+            .contactArea {
+                padding-top: 4%;
+                .contactLeft {
+                    .contactLeft-2 {
+                        margin-top: 28%;
+                    }
+                    .contactLeft-3 {
+                        margin-top: -60%;
+                    }
+                }
             }
         }
     }
