@@ -442,8 +442,7 @@ body {
             display: grid;
             grid-template-rows: 70% 30%;
             .mNavLogo {
-                padding: 5%;
-                padding-top: 0;
+                padding: 0 5%;
                 img {
                     padding: 2%;
                     width: 100%;
@@ -508,7 +507,7 @@ body {
     .swiper-container {
         width: 350px;
         height: 250px;
-        margin-top: 50%;
+        margin-top: 40%;
         z-index: 0;
         .swiper-slide {
             background-position: center;
@@ -988,7 +987,8 @@ body {
         }
     }
 }
-@media screen and (max-width: 414px) {
+
+@media screen and (max-width: 414px) and (max-height: 736px) {
     .wrap {
         display: flex;
         flex-direction: column;
@@ -1023,7 +1023,7 @@ body {
             height: 100vh;
             .tattooVideo {
                 width: 400px;
-                margin-top: 50%;
+                margin-top: 40%;
             }
         }
         .about {
@@ -1031,30 +1031,30 @@ body {
             flex-direction: column;
             justify-content: flex-start;
             height: 100vh;
-            background-color: $black;
             .aboutLeftImg {
                 height: 50%;
                 img {
-                    margin: 0;
-                    width: 100%;
+                    width: 300px;
+                    padding-top: 30%;
                 }
             }
             .aboutRight {
-                background-color: $black;
-                width: 414px;
-                padding: 0;
+                width: 300px;
                 margin: 0;
+                background-color: $black;
                 .aboutLogo {
                     margin: 0;
-                    padding: 15%;
+                    padding: 0;
                     img {
-                        padding: 0;
-                        width: 100%;
+                        width: 50%;
+                        margin-top: -50%;
+                        margin-left: -20%;
                     }
                 }
                 .aboutWords {
                     margin: 0;
-                    font-size: 12px;
+                    width: 350px;
+                    border: 0px;
                     line-height: 1.3;
                 }
             }
@@ -1079,8 +1079,8 @@ body {
                 .processCard1,
                 .processCard2 {
                     width: 300px;
-                    height: 250px;
-                    margin: 10% auto;
+                    height: 230px;
+                    margin: 5% auto;
                     overflow: scroll;
                     .processContent {
                         padding: 0 6% 8% 10%;
@@ -1130,9 +1130,9 @@ body {
                     }
                     .contactLeft-2 {
                         display: flex;
-                        margin-top: 160px;
+                        margin-top: 100px;
                         .addressImg {
-                            margin: 0 15px 0 35px;
+                            margin: 0 15px 0 10px;
                             img {
                                 padding-top: 10px;
                                 width: 80%;
@@ -1146,7 +1146,7 @@ body {
                     .contactLeft-3 {
                         z-index: 0;
                         text-align: center;
-                        margin-top: -180px;
+                        margin-top: -150px;
                         a {
                             &:nth-child(2) {
                                 margin: 0 15px;
@@ -1179,6 +1179,7 @@ body {
         }
     }
 }
+
 @media screen and (max-width: 375px) and (max-height: 812px) {
     .wrap {
         max-width: 375px;
@@ -1189,12 +1190,17 @@ body {
             }
         }
         .about {
+            .aboutLeftImg {
+                img {
+                    padding: 0;
+                }
+            }
             .aboutRight {
-                width: 375px;
+                width: 300px;
                 .aboutLogo {
                     padding: 15% 0 15% 10%;
                     img {
-                        width: 80%;
+                        margin-left: -50%;
                     }
                 }
             }
@@ -1211,32 +1217,42 @@ body {
         .about {
             .aboutLeftImg {
                 height: 45%;
+                img {
+                    padding-top: 30%;
+                }
             }
         }
         .process {
             .cardArea {
-                .processCard1 {
-                    margin: 30px auto 0;
+                .processCard1, .processCard2{
+                    margin: 20px auto 0;
+                    height: 210px;
+                    .processTitle {
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+                    }
                 }
             }
         }
         .contact {
             .contactArea {
-                margin: 20px 0 0 0;
+                margin: -15px 0 0 0;
                 .contactLeft {
                     .contactLeft-1 {
                         .contactXLogo {
                             padding: 30px 10px 0 10px;
                             img {
-                                width: 70%;
+                                width: 60%;
                             }
                         }
                         .contactXWords {
-                            padding-top: 17px;
+                            padding-top: 25px;
+                            margin-left: -5%;
                         }
                     }
                     .contactLeft-2 {
-                        margin-top: 130px;
+                        margin-top: 100px;
                         .addressImg {
                             img {
                                 padding-top: 5px;
@@ -1253,7 +1269,7 @@ body {
             }
         }
         .swiper-container {
-            margin-top: 50%;
+            margin-top: 30%;
         }
     }
 }
@@ -1269,35 +1285,36 @@ body {
         .index {
             .tattooVideo {
                 width: 350px;
+                margin-top: 40%;
             }
         }
         .gallery {
             .swiper-container {
                 width: 320px;
-                margin-top: 45%;
+                // margin-top: 45%;
             }
         }
         .process {
             .cardArea {
                 .processCard1,
                 .processCard2 {
-                    height: 230px;
+                    height: 200px;
                 }
             }
         }
         .contact {
             .contactArea {
-                margin: 20px 0 0 0;
+                margin: 0;
                 .contactLeft {
                     .contactLeft-2 {
-                        margin-top: 100px;
+                        margin-top: 80px;
                     }
                     .contactLeft-3 {
-                        margin-top: -160px;
+                        margin-top: -140px;
                     }
                 }
                 .contactRight {
-                    margin-top: 90px;
+                    margin-top: 80px;
                 }
             }
         }
@@ -1332,9 +1349,6 @@ body {
         .about {
             .aboutLeftImg {
                 height: 40%;
-                img {
-                    padding-top: 10%;
-                }
             }
             .aboutRight {
                 .aboutLogo {
@@ -1349,7 +1363,8 @@ body {
         }
         .gallery {
             .swiper-container {
-                width: 300px;
+                width: 290px;
+                height: 200px;
             }
         }
         .process {
@@ -1357,13 +1372,13 @@ body {
                 .processCard1,
                 .processCard2 {
                     width: 270px;
-                    height: 200px;
+                    height: 170px;
                 }
             }
         }
         .contact {
             .contactArea {
-                margin-top: 0;
+                margin-top: 50px;
                 .contactLeft {
                     .contactLeft-1 {
                         .contactXLogo {
@@ -1372,10 +1387,16 @@ body {
                         }
                     }
                     .contactLeft-2 {
-                        margin-top: 80px;
+                        margin-top: 0;
+                        .addressImg {
+                            margin: 0 0 0 35px;
+                        }
+                        .addressWords {
+                            font-size: 12px;
+                        }
                     }
                     .contactLeft-3 {
-                        margin-top: -150px;
+                        margin-top: 0;
                         a {
                             img {
                                 width: 15%;
@@ -1384,8 +1405,7 @@ body {
                     }
                 }
                 .contactRight {
-                    margin-top: 80px;
-                    width: 280px;
+                    display: none;
                 }
             }
         }
