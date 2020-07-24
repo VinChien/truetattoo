@@ -40,8 +40,9 @@ $(function () {
   }
 
   // contact a blank
-  let contactArray = ['.contactFB', '.contactIG', '.googleMap'];
-  let contactHttps = ['https://www.facebook.com/truetattooedddie/', 'https://www.instagram.com/truetattooeddie/' ,'https://www.google.com.tw/maps/place/%E8%A6%8B%E7%9C%9F%E5%88%BA%E9%9D%92TRUETATTOO/@24.154283,120.6954716,19z/data=!4m13!1m7!3m6!1s0x34693d5bfcaab7f7:0xc23d8d23c45a4e8e!2zNDA05Y-w5Lit5biC5YyX5Y2A6Ieq5by36KGXNDPlt7czMOW8hDE0LTPomZ82Rg!3b1!8m2!3d24.1543021!4d120.6954894!3m4!1s0x34693d6bd5942b93:0x7dccee5d4d767145!8m2!3d24.154171!4d120.6954916?hl=zh-TW'];
+  let contactArray = ['.contactFB', '.contactIG', '.googleMap', '.addressImg'];
+  let googleMapLink = 'https://www.google.com.tw/maps/place/%E8%A6%8B%E7%9C%9F%E5%88%BA%E9%9D%92TRUETATTOO/@24.154283,120.6954716,19z/data=!4m13!1m7!3m6!1s0x34693d5bfcaab7f7:0xc23d8d23c45a4e8e!2zNDA05Y-w5Lit5biC5YyX5Y2A6Ieq5by36KGXNDPlt7czMOW8hDE0LTPomZ82Rg!3b1!8m2!3d24.1543021!4d120.6954894!3m4!1s0x34693d6bd5942b93:0x7dccee5d4d767145!8m2!3d24.154171!4d120.6954916?hl=zh-TW';
+  let contactHttps = ['https://www.facebook.com/truetattooedddie/', 'https://www.instagram.com/truetattooeddie/', googleMapLink, googleMapLink];
   for (let i = 0; i < contactArray.length; i++) {
     document.querySelector(contactArray[i]).onclick = (e) => {
       e.preventDefault();

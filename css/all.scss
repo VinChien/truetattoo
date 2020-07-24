@@ -293,6 +293,9 @@ body {
 
                     .addressImg {
                         margin-bottom: 2%;
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                     .addressWords {
                         font-size: 16px;
