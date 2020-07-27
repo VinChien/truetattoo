@@ -1,0 +1,298 @@
+@import 'color';
+
+// Desktop screen
+@media screen and (max-width: 1600px) {
+    .wrap {
+        .intro {
+            .introLogo {
+                img {
+                    width: 70%;
+                }
+            }
+            a {
+                margin-bottom: 2%;
+            }
+        }
+        .index {
+            .tattooVideo {
+                margin-top: 6%;
+            }
+        }
+        .about {
+            .aboutLeftImg,
+            .aboutRight {
+                margin-top: -5%;
+            }
+            .aboutLeftImg {
+                img {
+                    width: 350px;
+                }
+            }
+            .aboutRight {
+                .aboutLogo {
+                    margin-right: 15%;
+                    img {
+                        width: 60%;
+                    }
+                }
+                .aboutWords {
+                    margin-bottom: -5%;
+                    font-size: 12px;
+                    height: 300px;
+                }
+            }
+        }
+        .gallery {
+            .galleryArea {
+                width: 600px;
+            }
+        }
+        .process {
+            .cardArea {
+                padding-top: 5%;
+                .processCard1,
+                .processCard2 {
+                    width: 500px;
+                    margin: 0 2%;
+                }
+                .processCard2 {
+                    .processContent {
+                        ul {
+                            li {
+                                p {
+                                    line-height: 1.5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .processRightLogo {
+                img {
+                    width: 70%;
+                }
+            }
+        }
+        .contact {
+            .contactArea {
+                padding-top: 2%;
+                .contactRight {
+                    .googleMap {
+                        padding-top: 1%;
+                    }
+                }
+            }
+        }
+        .navWrap {
+            .navOption {
+                .navOptionLine {
+                    margin: 40% auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .wrap {
+        .navWrap {
+            .navOption {
+                .navOptionLine {
+                    margin: 60% auto;
+                }
+            }
+        }
+        .about {
+            .aboutLeftImg,
+            .aboutRight {
+                margin-top: -10%;
+            }
+            .aboutRight {
+                margin-left: -2%;
+                .aboutLogo {
+                    img {
+                        width: 70%;
+                    }
+                }
+                .aboutWords {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .gallery {
+            .galleryArea {
+                width: 550px;
+            }
+        }
+        .process {
+            .cardArea {
+                padding-top: 4%;
+            }
+        }
+        .contact {
+            .contactArea {
+                .contactLeft {
+                    .contactLeft-2 {
+                        margin-top: 28%;
+                    }
+                    .contactLeft-3 {
+                        margin-top: -60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .wrap {
+        .navWrap {
+            .navLogo {
+                a:nth-child(2) {
+                    img {
+                        bottom: 25%;
+                    }
+                }
+            }
+            .navOption {
+                .navOptionLine {
+                    margin: 100% auto;
+                }
+            }
+        }
+        .index {
+            .tattooVideo {
+                margin-top: 8%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .wrap {
+        .navWrap {
+            .navOption {
+                .navOptionA {
+                    a {
+                        padding: 15px 22px;
+                        font-size: 12px;
+                    }
+                }
+                .navOptionLine {
+                    margin: 80% auto;
+                }
+            }
+            .navCopyright {
+                p {
+                    font-size: 8px;
+                }
+            }
+        }
+        .intro {
+            .introLogo {
+                img {
+                    width: 50%;
+                }
+            }
+            .introCopyright {
+                font-size: 12px;
+            }
+        }
+        .index {
+            .tattooVideo {
+                margin-top: 3%;
+            }
+        }
+        .about {
+            .aboutLeftImg {
+                margin-top: -7%;
+                img {
+                    width: 300px;
+                }
+            }
+            .aboutRight {
+                margin-left: 0;
+                margin-top: -6%;
+                .aboutLogo {
+                    img {
+                        width: 50%;
+                    }
+                }
+                .aboutWords {
+                    height: 305px;
+                    width: 190px;
+                }
+            }
+        }
+        .gallery {
+            .galleryArea {
+                padding-top: 2%;
+            }
+        }
+        .process {
+            .cardArea {
+                .processCard1,
+                .processCard2 {
+                    width: 500px;
+                    .processContent {
+                        ul {
+                            li {
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .processRightLogo {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+        .contact {
+            .contactArea {
+                width: 50%;
+                .contactLeft {
+                    .contactLeft-1 {
+                        margin-bottom: 10%;
+                        .contactXLogo {
+                            margin-bottom: 10%;
+                            img {
+                                width: 30%;
+                            }
+                        }
+                    }
+                    .contactLeft-2 {
+                        .addressImg {
+                            img {
+                                width: 30px;
+                            }
+                        }
+                    }
+                    .contactLeft-3 {
+                        img {
+                            width: 15%;
+                        }
+                    }
+                }
+                .contactRight {
+                    .googleMap {
+                        img {
+                            width: 80%;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
+            .contactLastLogo {
+                position: absolute;
+                background-color: $black;
+                padding: 100% 1% 5%;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}

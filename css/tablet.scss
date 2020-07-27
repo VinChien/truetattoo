@@ -1,0 +1,177 @@
+@import 'color';
+
+// Tablet screen
+@media screen and (max-width: 1280px) {
+    .wrap {
+        .navWrap {
+            .navOption {
+                .navOptionA {
+                    margin: 15px 0;
+                    a {
+                        padding: 15px;
+                    }
+                }
+                .navOptionLine {
+                    margin: 40% auto;
+                }
+            }
+            .navCopyright {
+                padding-top: 11px;
+            }
+        }
+        .intro {
+            .introLogo {
+                img {
+                    width: 50%;
+                }
+            }
+            .introCopyright {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        .about {
+            .aboutLeftImg {
+                margin-right: 0;
+            }
+            .aboutRight {
+                .aboutLogo {
+                    margin-right: 20%;
+                }
+                .aboutWords {
+                    margin-left: -15%;
+                }
+            }
+        }
+        .gallery {
+            .galleryArea {
+                width: 500px;
+            }
+        }
+        .process {
+            .processRightLogo {
+                bottom: 60px;
+                img {
+                    margin-left: 25%;
+                    width: 50%;
+                }
+            }
+        }
+        .contact {
+            .contactArea {
+                padding-top: 1%;
+                .contactRight {
+                    text-align: left;
+                }
+            }
+            .contactLastLogo {
+                right: -40px;
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrap {
+        .navWrap {
+            .navLogo {
+                a:nth-child(2) {
+                    img {
+                        bottom: 30%;
+                    }
+                }
+            }
+            .navOption {
+                margin-top: 100px;
+                padding: 10px;
+                .navOptionA {
+                    a {
+                        font-size: 12px;
+                        padding: 10px;
+                    }
+                }
+                .navOptionLine {
+                    margin: 80% auto;
+                }
+            }
+            .navCopyright {
+                padding-top: 20px;
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        .index {
+            .tattooVideo {
+                margin-top: 5%;
+            }
+        }
+        .about {
+            .aboutLeftImg {
+                img {
+                    width: 280px;
+                }
+            }
+            .aboutRight {
+                .aboutLogo {
+                    img {
+                        width: 45%;
+                    }
+                }
+            }
+        }
+        .gallery {
+            .galleryArea {
+                padding-top: 6%;
+            }
+        }
+        .process {
+            .cardArea {
+                padding-top: 2%;
+                .processCard1,
+                .processCard2 {
+                    width: 400px;
+                    .processContent {
+                        ul {
+                            padding: 6%;
+                        }
+                    }
+                }
+            }
+            .processRightLogo {
+                bottom: 67px;
+            }
+        }
+        .contact {
+            .contactArea {
+                padding-top: 5%;
+                .contactLeft {
+                    font-size: 12px;
+                    .contactLeft-2 {
+                        margin-top: 40%;
+                        .addressWords {
+                            font-size: 12px;
+                        }
+                    }
+                    .contactLeft-3 {
+                        margin-top: -70%;
+                    }
+                }
+                .contactRight {
+                    .googleMap {
+                        img {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            .contactLastLogo {
+                bottom: 15px;
+            }
+        }
+    }
+}

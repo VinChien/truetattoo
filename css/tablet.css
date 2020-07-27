@@ -1,0 +1,122 @@
+@media screen and (max-width: 1280px) {
+  .wrap .navWrap .navOption .navOptionA {
+    margin: 15px 0;
+  }
+  .wrap .navWrap .navOption .navOptionA a {
+    padding: 15px;
+  }
+  .wrap .navWrap .navOption .navOptionLine {
+    margin: 40% auto;
+  }
+  .wrap .navWrap .navCopyright {
+    padding-top: 11px;
+  }
+  .wrap .intro .introLogo img {
+    width: 50%;
+  }
+  .wrap .intro .introCopyright p {
+    font-size: 12px;
+  }
+  .wrap .about .aboutLeftImg {
+    margin-right: 0;
+  }
+  .wrap .about .aboutRight .aboutLogo {
+    margin-right: 20%;
+  }
+  .wrap .about .aboutRight .aboutWords {
+    margin-left: -15%;
+  }
+  .wrap .gallery .galleryArea {
+    width: 500px;
+  }
+  .wrap .process .processRightLogo {
+    bottom: 60px;
+  }
+  .wrap .process .processRightLogo img {
+    margin-left: 25%;
+    width: 50%;
+  }
+  .wrap .contact .contactArea {
+    padding-top: 1%;
+  }
+  .wrap .contact .contactArea .contactRight {
+    text-align: left;
+  }
+  .wrap .contact .contactLastLogo {
+    right: -40px;
+  }
+  .wrap .contact .contactLastLogo img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrap .navWrap .navLogo a:nth-child(2) img {
+    bottom: 30%;
+  }
+  .wrap .navWrap .navOption {
+    margin-top: 100px;
+    padding: 10px;
+  }
+  .wrap .navWrap .navOption .navOptionA a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .wrap .navWrap .navOption .navOptionLine {
+    margin: 80% auto;
+  }
+  .wrap .navWrap .navCopyright {
+    padding-top: 20px;
+  }
+  .wrap .navWrap .navCopyright p {
+    font-size: 12px;
+  }
+  .wrap .index .tattooVideo {
+    margin-top: 5%;
+  }
+  .wrap .about .aboutLeftImg img {
+    width: 280px;
+  }
+  .wrap .about .aboutRight .aboutLogo img {
+    width: 45%;
+  }
+  .wrap .gallery .galleryArea {
+    padding-top: 6%;
+  }
+  .wrap .process .cardArea {
+    padding-top: 2%;
+  }
+  .wrap .process .cardArea .processCard1,
+  .wrap .process .cardArea .processCard2 {
+    width: 400px;
+  }
+  .wrap .process .cardArea .processCard1 .processContent ul,
+  .wrap .process .cardArea .processCard2 .processContent ul {
+    padding: 6%;
+  }
+  .wrap .process .processRightLogo {
+    bottom: 67px;
+  }
+  .wrap .contact .contactArea {
+    padding-top: 5%;
+  }
+  .wrap .contact .contactArea .contactLeft {
+    font-size: 12px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 {
+    margin-top: 40%;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-2 .addressWords {
+    font-size: 12px;
+  }
+  .wrap .contact .contactArea .contactLeft .contactLeft-3 {
+    margin-top: -70%;
+  }
+  .wrap .contact .contactArea .contactRight .googleMap img {
+    width: 90%;
+  }
+  .wrap .contact .contactLastLogo {
+    bottom: 15px;
+  }
+}
+/*# sourceMappingURL=tablet.css.map */
