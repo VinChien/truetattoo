@@ -850,7 +850,7 @@ body {
         .intro {
             .introLogo {
                 img {
-                    width: 60%;
+                    width: 50%;
                 }
             }
             .introCopyright {
@@ -859,13 +859,14 @@ body {
                 }
             }
         }
-        .index {
-            .tattooVideo {
-                margin-top: 6%;
-            }
-        }
         .about {
+            .aboutLeftImg {
+                margin-right: 0;
+            }
             .aboutRight {
+                .aboutLogo {
+                    margin-right: 20%;
+                }
                 .aboutWords {
                     margin-left: -15%;
                 }
@@ -874,22 +875,20 @@ body {
         .gallery {
             .galleryArea {
                 width: 500px;
-                padding-top: 6%;
             }
         }
         .process {
             .processRightLogo {
-                right: 0;
-                bottom: 50px;
+                bottom: 60px;
                 img {
                     margin-left: 25%;
-                    text-align: right;
-                    width: 60%;
+                    width: 50%;
                 }
             }
         }
         .contact {
             .contactArea {
+                padding-top: 1%;
                 .contactRight {
                     text-align: left;
                 }
@@ -936,23 +935,31 @@ body {
         }
         .index {
             .tattooVideo {
-                margin-top: 10%;
+                margin-top: 5%;
             }
         }
         .about {
             .aboutLeftImg {
-                margin-right: 0;
+                img {
+                    width: 280px;
+                }
             }
             .aboutRight {
                 .aboutLogo {
                     img {
-                        width: 50%;
+                        width: 45%;
                     }
                 }
             }
         }
+        .gallery {
+            .galleryArea {
+                padding-top: 6%;
+            }
+        }
         .process {
             .cardArea {
+                padding-top: 2%;
                 .processCard1,
                 .processCard2 {
                     width: 400px;
@@ -963,10 +970,13 @@ body {
                     }
                 }
             }
+            .processRightLogo {
+                bottom: 67px;
+            }
         }
         .contact {
             .contactArea {
-                padding-top: 10%;
+                padding-top: 5%;
                 .contactLeft {
                     font-size: 12px;
                     .contactLeft-2 {

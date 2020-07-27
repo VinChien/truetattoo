@@ -848,29 +848,32 @@ body {
     padding-top: 11px;
   }
   .wrap .intro .introLogo img {
-    width: 60%;
+    width: 50%;
   }
   .wrap .intro .introCopyright p {
     font-size: 12px;
   }
-  .wrap .index .tattooVideo {
-    margin-top: 6%;
+  .wrap .about .aboutLeftImg {
+    margin-right: 0;
+  }
+  .wrap .about .aboutRight .aboutLogo {
+    margin-right: 20%;
   }
   .wrap .about .aboutRight .aboutWords {
     margin-left: -15%;
   }
   .wrap .gallery .galleryArea {
     width: 500px;
-    padding-top: 6%;
   }
   .wrap .process .processRightLogo {
-    right: 0;
-    bottom: 50px;
+    bottom: 60px;
   }
   .wrap .process .processRightLogo img {
     margin-left: 25%;
-    text-align: right;
-    width: 60%;
+    width: 50%;
+  }
+  .wrap .contact .contactArea {
+    padding-top: 1%;
   }
   .wrap .contact .contactArea .contactRight {
     text-align: left;
@@ -905,13 +908,19 @@ body {
     font-size: 12px;
   }
   .wrap .index .tattooVideo {
-    margin-top: 10%;
+    margin-top: 5%;
   }
-  .wrap .about .aboutLeftImg {
-    margin-right: 0;
+  .wrap .about .aboutLeftImg img {
+    width: 280px;
   }
   .wrap .about .aboutRight .aboutLogo img {
-    width: 50%;
+    width: 45%;
+  }
+  .wrap .gallery .galleryArea {
+    padding-top: 6%;
+  }
+  .wrap .process .cardArea {
+    padding-top: 2%;
   }
   .wrap .process .cardArea .processCard1,
   .wrap .process .cardArea .processCard2 {
@@ -921,8 +930,11 @@ body {
   .wrap .process .cardArea .processCard2 .processContent ul {
     padding: 6%;
   }
+  .wrap .process .processRightLogo {
+    bottom: 67px;
+  }
   .wrap .contact .contactArea {
-    padding-top: 10%;
+    padding-top: 5%;
   }
   .wrap .contact .contactArea .contactLeft {
     font-size: 12px;
