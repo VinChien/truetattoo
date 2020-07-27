@@ -18,14 +18,15 @@ $green: #47bcc5;
 
 body {
     background-color: $black;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 // screen 1920
 .wrap {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    height: 100vh;
-    overflow: hidden;
+    // height: 100vh;
 
     .intro {
         display: flex;
@@ -126,6 +127,10 @@ body {
         align-items: center;
         background-color: $black;
         width: 100vw;
+        .aboutLeftImg,
+        .aboutRight {
+            margin-top: -10%;
+        }
         .aboutLeftImg {
             display: flex;
             align-items: center;
@@ -217,14 +222,16 @@ body {
         height: 100vh;
         position: relative;
         .cardArea {
+            display: flex;
+            justify-content: center;
+            padding-top: 8%;
             letter-spacing: 1px;
             .processCard1,
             .processCard2 {
-                margin: 1% auto 0;
                 padding: 20px;
                 border: 1px dashed $gray;
                 border-radius: 15px;
-                width: 900px;
+                width: 700px;
                 .processTitle {
                     border-bottom: 1px dashed $gray;
                     text-align: center;
@@ -249,11 +256,14 @@ body {
                     }
                 }
             }
+            .processCard1 {
+                margin-right: 40px;
+            }
         }
         .processRightLogo {
             position: absolute;
             right: 0;
-            bottom: 50px;
+            bottom: 66px;
             img {
                 height: auto;
                 width: 80%;
@@ -524,13 +534,18 @@ body {
 @media screen and (max-width: 1600px) {
     .wrap {
         .intro {
+            .introLogo {
+                img {
+                    width: 70%;
+                }
+            }
             a {
                 margin-bottom: 2%;
             }
         }
         .index {
             .tattooVideo {
-                margin-top: 12%;
+                margin-top: 6%;
             }
         }
         .about {
@@ -538,28 +553,33 @@ body {
             .aboutRight {
                 margin-top: -5%;
             }
+            .aboutLeftImg {
+                img {
+                    width: 350px;
+                }
+            }
             .aboutRight {
                 .aboutLogo {
                     margin-right: 15%;
                     img {
-                        width: 80%;
+                        width: 60%;
                     }
                 }
                 .aboutWords {
                     margin-bottom: -5%;
+                    font-size: 12px;
+                    height: 300px;
                 }
             }
         }
         .gallery {
             .galleryArea {
-                width: 700px;
+                width: 600px;
             }
         }
         .process {
             .cardArea {
-                display: flex;
-                justify-content: center;
-                padding-top: 8%;
+                padding-top: 5%;
                 .processCard1,
                 .processCard2 {
                     width: 500px;
@@ -585,6 +605,7 @@ body {
         }
         .contact {
             .contactArea {
+                padding-top: 2%;
                 .contactRight {
                     .googleMap {
                         padding-top: 1%;
@@ -611,12 +632,11 @@ body {
                 }
             }
         }
-        .index {
-            .tattooVideo {
-                margin-top: 8%;
-            }
-        }
         .about {
+            .aboutLeftImg,
+            .aboutRight {
+                margin-top: -10%;
+            }
             .aboutRight {
                 margin-left: -2%;
                 .aboutLogo {
@@ -631,17 +651,16 @@ body {
         }
         .gallery {
             .galleryArea {
-                width: 700px;
+                width: 550px;
             }
         }
         .process {
             .cardArea {
-                padding-top: 6%;
+                padding-top: 4%;
             }
         }
         .contact {
             .contactArea {
-                padding-top: 4%;
                 .contactLeft {
                     .contactLeft-2 {
                         margin-top: 28%;
@@ -673,7 +692,7 @@ body {
         }
         .index {
             .tattooVideo {
-                margin-top: 12%;
+                margin-top: 8%;
             }
         }
     }
@@ -703,20 +722,23 @@ body {
         .intro {
             .introLogo {
                 img {
-                    width: 70%;
+                    width: 50%;
                 }
+            }
+            .introCopyright {
+                font-size: 12px;
             }
         }
         .index {
             .tattooVideo {
-                margin-top: 8%;
+                margin-top: 3%;
             }
         }
         .about {
             .aboutLeftImg {
-                margin-top: -6%;
+                margin-top: -7%;
                 img {
-                    width: 350px;
+                    width: 300px;
                 }
             }
             .aboutRight {
@@ -724,11 +746,10 @@ body {
                 margin-top: -6%;
                 .aboutLogo {
                     img {
-                        width: 60%;
+                        width: 50%;
                     }
                 }
                 .aboutWords {
-                    font-size: 12px;
                     height: 305px;
                     width: 190px;
                 }
@@ -736,8 +757,7 @@ body {
         }
         .gallery {
             .galleryArea {
-                width: 600px;
-                padding-top: 5%;
+                padding-top: 2%;
             }
         }
         .process {
@@ -757,8 +777,6 @@ body {
                 }
             }
             .processRightLogo {
-                right: -50px;
-                bottom: 50px;
                 img {
                     width: 60%;
                 }
@@ -992,6 +1010,10 @@ body {
 }
 
 @media screen and (max-width: 414px) and (max-height: 736px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
     .wrap {
         display: flex;
         flex-direction: column;
@@ -1227,7 +1249,8 @@ body {
         }
         .process {
             .cardArea {
-                .processCard1, .processCard2{
+                .processCard1,
+                .processCard2 {
                     margin: 20px auto 0;
                     height: 210px;
                     .processTitle {

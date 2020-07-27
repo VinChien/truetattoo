@@ -1,9 +1,9 @@
 $(function () {
 
   // scrollLeft
-  // $('*').mousewheel(function (e, move) {
-  //   this.scrollLeft -= (move * 500);
-  // });
+  $('*').mousewheel(function (e, move) {
+    this.scrollLeft -= (move * 500);
+  });
 
   // intro effects
   $('.introLogo').addClass('animate__animated animate__zoomIn');

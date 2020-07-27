@@ -65,6 +65,8 @@
 
 body {
   background-color: #000;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .wrap {
@@ -72,8 +74,6 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[9];
       grid-template-columns: repeat(9, 1fr);
-  height: 100vh;
-  overflow: hidden;
 }
 
 .wrap .intro {
@@ -180,6 +180,11 @@ body {
   width: 100vw;
 }
 
+.wrap .about .aboutLeftImg,
+.wrap .about .aboutRight {
+  margin-top: -10%;
+}
+
 .wrap .about .aboutLeftImg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,16 +283,22 @@ body {
 }
 
 .wrap .process .cardArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 8%;
   letter-spacing: 1px;
 }
 
 .wrap .process .cardArea .processCard1,
 .wrap .process .cardArea .processCard2 {
-  margin: 1% auto 0;
   padding: 20px;
   border: 1px dashed #9a9a9a;
   border-radius: 15px;
-  width: 900px;
+  width: 700px;
 }
 
 .wrap .process .cardArea .processCard1 .processTitle,
@@ -317,10 +328,14 @@ body {
   line-height: 1.5;
 }
 
+.wrap .process .cardArea .processCard1 {
+  margin-right: 40px;
+}
+
 .wrap .process .processRightLogo {
   position: absolute;
   right: 0;
-  bottom: 50px;
+  bottom: 66px;
 }
 
 .wrap .process .processRightLogo img {
@@ -639,36 +654,38 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
+  .wrap .intro .introLogo img {
+    width: 70%;
+  }
   .wrap .intro a {
     margin-bottom: 2%;
   }
   .wrap .index .tattooVideo {
-    margin-top: 12%;
+    margin-top: 6%;
   }
   .wrap .about .aboutLeftImg,
   .wrap .about .aboutRight {
     margin-top: -5%;
   }
+  .wrap .about .aboutLeftImg img {
+    width: 350px;
+  }
   .wrap .about .aboutRight .aboutLogo {
     margin-right: 15%;
   }
   .wrap .about .aboutRight .aboutLogo img {
-    width: 80%;
+    width: 60%;
   }
   .wrap .about .aboutRight .aboutWords {
     margin-bottom: -5%;
+    font-size: 12px;
+    height: 300px;
   }
   .wrap .gallery .galleryArea {
-    width: 700px;
+    width: 600px;
   }
   .wrap .process .cardArea {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 8%;
+    padding-top: 5%;
   }
   .wrap .process .cardArea .processCard1,
   .wrap .process .cardArea .processCard2 {
@@ -680,6 +697,9 @@ body {
   }
   .wrap .process .processRightLogo img {
     width: 70%;
+  }
+  .wrap .contact .contactArea {
+    padding-top: 2%;
   }
   .wrap .contact .contactArea .contactRight .googleMap {
     padding-top: 1%;
@@ -693,8 +713,9 @@ body {
   .wrap .navWrap .navOption .navOptionLine {
     margin: 60% auto;
   }
-  .wrap .index .tattooVideo {
-    margin-top: 8%;
+  .wrap .about .aboutLeftImg,
+  .wrap .about .aboutRight {
+    margin-top: -10%;
   }
   .wrap .about .aboutRight {
     margin-left: -2%;
@@ -706,12 +727,9 @@ body {
     margin-bottom: 0;
   }
   .wrap .gallery .galleryArea {
-    width: 700px;
+    width: 550px;
   }
   .wrap .process .cardArea {
-    padding-top: 6%;
-  }
-  .wrap .contact .contactArea {
     padding-top: 4%;
   }
   .wrap .contact .contactArea .contactLeft .contactLeft-2 {
@@ -730,7 +748,7 @@ body {
     margin: 100% auto;
   }
   .wrap .index .tattooVideo {
-    margin-top: 12%;
+    margin-top: 8%;
   }
 }
 
@@ -746,32 +764,33 @@ body {
     font-size: 8px;
   }
   .wrap .intro .introLogo img {
-    width: 70%;
+    width: 50%;
+  }
+  .wrap .intro .introCopyright {
+    font-size: 12px;
   }
   .wrap .index .tattooVideo {
-    margin-top: 8%;
+    margin-top: 3%;
   }
   .wrap .about .aboutLeftImg {
-    margin-top: -6%;
+    margin-top: -7%;
   }
   .wrap .about .aboutLeftImg img {
-    width: 350px;
+    width: 300px;
   }
   .wrap .about .aboutRight {
     margin-left: 0;
     margin-top: -6%;
   }
   .wrap .about .aboutRight .aboutLogo img {
-    width: 60%;
+    width: 50%;
   }
   .wrap .about .aboutRight .aboutWords {
-    font-size: 12px;
     height: 305px;
     width: 190px;
   }
   .wrap .gallery .galleryArea {
-    width: 600px;
-    padding-top: 5%;
+    padding-top: 2%;
   }
   .wrap .process .cardArea .processCard1,
   .wrap .process .cardArea .processCard2 {
@@ -780,10 +799,6 @@ body {
   .wrap .process .cardArea .processCard1 .processContent ul li p,
   .wrap .process .cardArea .processCard2 .processContent ul li p {
     font-size: 12px;
-  }
-  .wrap .process .processRightLogo {
-    right: -50px;
-    bottom: 50px;
   }
   .wrap .process .processRightLogo img {
     width: 60%;
@@ -942,6 +957,10 @@ body {
 }
 
 @media screen and (max-width: 414px) and (max-height: 736px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
   .wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1181,11 +1200,13 @@ body {
   .wrap .about .aboutLeftImg img {
     padding-top: 30%;
   }
-  .wrap .process .cardArea .processCard1, .wrap .process .cardArea .processCard2 {
+  .wrap .process .cardArea .processCard1,
+  .wrap .process .cardArea .processCard2 {
     margin: 20px auto 0;
     height: 210px;
   }
-  .wrap .process .cardArea .processCard1 .processTitle h3, .wrap .process .cardArea .processCard2 .processTitle h3 {
+  .wrap .process .cardArea .processCard1 .processTitle h3,
+  .wrap .process .cardArea .processCard2 .processTitle h3 {
     font-size: 1.5rem;
   }
   .wrap .contact .contactArea {
