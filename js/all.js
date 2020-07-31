@@ -112,8 +112,8 @@ $(function () {
     } // End if
   });
 
-   // Add smooth scrolling to mNav all links
-   $(".mAnchorPoint").on('click', function (e) {
+  // Add smooth scrolling to mNav all links
+  $(".mAnchorPoint").on('click', function (e) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
