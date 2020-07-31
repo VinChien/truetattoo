@@ -403,6 +403,10 @@ body {
   line-height: 1.5;
 }
 
+.wrap .contact .contactArea .contactLeft .contactLeft-3 {
+  margin: 0 auto;
+}
+
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a {
   display: inline-block;
   width: 30px;
@@ -414,15 +418,12 @@ body {
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(1) {
   background-image: url("../images/contactFBLogo30.png");
+  margin-right: 10px;
 }
 
 .wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(2) {
   background-image: url("../images/contactIGLogo30.png");
-  margin: 0 20px;
-}
-
-.wrap .contact .contactArea .contactLeft .contactLeft-3 a:nth-child(3) {
-  background-image: url("../images/contactLINELogo30.png");
+  margin-left: 10px;
 }
 
 .wrap .contact .contactArea .contactRight {
@@ -624,9 +625,18 @@ body {
 }
 
 .wrap .mNavMenu .mNavOptionWrap .mNavOptionA {
-  background-color: #47bcc5;
+  background-color: #000;
+  border: 1px solid #47bcc5;
   margin-bottom: 3px;
   border-radius: 10px 0 0 10px;
+}
+
+.wrap .mNavMenu .mNavOptionWrap .mNavOptionA:active {
+  background-color: #9a9a9a;
+}
+
+.wrap .mNavMenu .mNavOptionWrap .mNavOptionA:hover {
+  background-color: #47bcc5;
 }
 
 .wrap .mNavMenu .mNavOptionWrap .mNavOptionA a {

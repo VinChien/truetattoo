@@ -292,6 +292,7 @@ body {
                     }
                 }
                 .contactLeft-3 {
+                    margin: 0 auto;
                     a {
                         display: inline-block;
                         width: 30px;
@@ -301,13 +302,11 @@ body {
                         white-space: nowrap;
                         &:nth-child(1) {
                             background-image: url("../images/contactFBLogo30.png");
+                            margin-right: 10px;
                         }
                         &:nth-child(2) {
                             background-image: url("../images/contactIGLogo30.png");
-                            margin: 0 20px;
-                        }
-                        &:nth-child(3) {
-                            background-image: url("../images/contactLINELogo30.png");
+                            margin-left: 10px;
                         }
                     }
                 }
@@ -479,9 +478,16 @@ body {
         right: -100%;
         .mNavOptionWrap {
             .mNavOptionA {
-                background-color: $green;
+                background-color: $black;
+                border: 1px solid $green;
                 margin-bottom: 3px;
                 border-radius: 10px 0 0 10px;
+                &:active {
+                    background-color: $gray;
+                }
+                &:hover {
+                    background-color: $green;
+                }
                 a {
                     text-decoration: none;
                     color: $white;

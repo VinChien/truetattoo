@@ -89,7 +89,7 @@ $(function () {
   }
   mAddGalleryPhoto.innerHTML = mStrBox;
 
-  // Add smooth scrolling to all links
+  // Add smooth scrolling to nav all links
   $(".anchorPoint").on('click', function (e) {
 
     // Make sure this.hash has a value before overriding default behavior
@@ -102,10 +102,33 @@ $(function () {
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      // offset.left
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollLeft: $(hash).offset().left
       }, 300, function () {
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 
+   // Add smooth scrolling to mNav all links
+   $(".mAnchorPoint").on('click', function (e) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      e.preventDefault();
+
+      // Store hash
+      let hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      // offset.left
+      $('html, body').animate({
+        scrollLeft: $(hash).offset().top
+      }, 300, function () {
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
