@@ -8,6 +8,7 @@ $(function () {
   // intro effects
   $('.introLogo').addClass('animate__animated animate__zoomIn');
   $('#introButton').attr('class', 'anchorPoint animate__animated animate__zoomIn animate__delay-1s');
+  $('#mIntroButton').attr('class', 'mAnchorPoint animate__animated animate__zoomIn animate__delay-1s');
   $('.introCopyright').addClass('animate__animated animate__zoomIn animate__delay-2s');
 
   // navOption focus

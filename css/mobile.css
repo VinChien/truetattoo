@@ -1,4 +1,7 @@
 @media screen and (min-width: 415px) {
+  .wrap .intro .mAnchorPoint {
+    display: none;
+  }
   .wrap .mNavWrap {
     display: none;
   }
@@ -27,6 +30,9 @@
     max-width: 414px;
   }
   .wrap .navWrap {
+    display: none;
+  }
+  .wrap .intro .anchorPoint {
     display: none;
   }
   .wrap .intro .introLogo {

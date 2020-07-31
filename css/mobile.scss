@@ -3,6 +3,11 @@
 // Mobile screen
 @media screen and (min-width: 415px) {
     .wrap {
+        .intro {
+            .mAnchorPoint {
+                display: none;
+            }
+        }
         .mNavWrap {
             display: none;
         }
@@ -29,6 +34,9 @@
             display: none;
         }
         .intro {
+            .anchorPoint {
+                display: none;
+            }
             .introLogo {
                 margin: 0 0 20% 1.3%;
                 img {
