@@ -154,6 +154,7 @@ body {
     .gallery {
         width: 100vw;
         height: 100vh;
+        // z-index: 2;
 
         .galleryArea {
             margin: auto;
@@ -188,6 +189,7 @@ body {
             margin: 0 auto;
             margin-top: 20px;
             width: 400px;
+            z-index: 2;
             cursor: -webkit-pointer;
             cursor: pointer;
             img {
